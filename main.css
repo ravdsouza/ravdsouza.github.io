@@ -1,0 +1,63 @@
+/* RAVEENA D'SOUZA 2017 */
+
+body{
+	height: 40%;
+	margin: 400;
+	text-align: center;
+	width: 40%;
+}
+
+h1{
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Muli', sans-serif;
+	color: #471414;
+}
+
+.nav{
+	text-align: left;
+	font-family: 'Quicksand', sans-serif;
+	color: #7c1c1c;
+}
+
+.main{
+	text-align: center;
+	/*font-family: 'Cutive', sans-serif;*/
+	color: rgb(265, 0, 0);
+}
+
+/* FONTS 
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Slabo 27px', serif;
+font-family: 'Caveat Brush', cursive;
+font-family: 'Muli', sans-serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Hind', sans-serif;
+font-family: 'Arvo', serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Mada', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Baloo', cursive;
+font-family: 'PT Sans Caption', sans-serif;
+font-family: 'Amatic SC', cursive;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Kreon', serif;
+font-family: 'Della Respira', serif;
+font-family: 'Boogaloo', cursive;
+font-family: 'Damion', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Cousine', monospace;
+font-family: 'Homemade Apple', cursive;
+font-family: 'Gochi Hand', cursive;
+font-family: 'Overpass Mono', monospace;
+font-family: 'Ubuntu Mono', monospace;
+font-family: 'Niconne', cursive;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Slabo 13px', serif;
+font-family: 'Grand Hotel', cursive;
+font-family: 'Cutive', serif;
+
+*/
