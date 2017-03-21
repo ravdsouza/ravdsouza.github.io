@@ -1,10 +1,21 @@
 /* RAVEENA D'SOUZA 2017 */
 
+/*
+
+	Good colours:
+	mistyrose: very light soft pink;
+	palevioletred: comparable to expresso by sally hansen;
+	thistle: very pale purple;
+	whitesmoke: off white, very light grey;
+
+*/
+
 body{
 	height: 40%;
 	margin: 400;
 	text-align: center;
-	width: 40%;
+	/*width: 81%;*/
+	background-color: whitesmoke;
 }
 
 h1{
@@ -22,8 +33,17 @@ h1{
 
 .main{
 	text-align: center;
+	width: 80%;
 	/*font-family: 'Cutive', sans-serif;*/
-	color: rgb(265, 0, 0);
+	color: #471414;
+}
+
+li {
+    list-style-type: none;
+}
+
+hr {
+	width: 50%;
 }
 
 /* FONTS 
