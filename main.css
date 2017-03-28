@@ -10,11 +10,12 @@
 
 */
 
+/*
 body{
 	height: 40%;
 	margin: 400;
 	text-align: center;
-	/*width: 81%;*/
+	/*width: 81%;
 	background-color: whitesmoke;
 }
 
@@ -34,7 +35,7 @@ h1{
 .main{
 	text-align: center;
 	width: 80%;
-	/*font-family: 'Cutive', sans-serif;*/
+	/*font-family: 'Cutive', sans-serif;
 	color: #471414;
 }
 
@@ -79,5 +80,125 @@ font-family: 'Montserrat Alternates', sans-serif;
 font-family: 'Slabo 13px', serif;
 font-family: 'Grand Hotel', cursive;
 font-family: 'Cutive', serif;
+
+*/
+
+/* START NEW CODE */
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+.row
+{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+body
+{
+	font-family:tahoma; /* CHANGE THIS FONT */
+}
+
+/* MAIN INTRO */
+.start
+{
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+header
+{
+	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/antelope-canyon.jpg);
+	height: 100vh; /* vertical height */
+	background-position: center;
+	background-size: cover; 
+}
+
+h1, h2
+{
+	color: white;
+}
+
+.nav
+{
+	list-style: none;
+	float: right;
+	margin-top: 60px;
+
+}
+
+.nav li
+{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.nav li a
+{
+	text-decoration: none;
+	color: white;
+	/*font-family: times;*/
+	font-size: 90%; /* size of menu above */
+	font-weight:  BOLD;
+
+}
+
+.nav li a:hover
+{
+	color: #f4a5b6;
+	border: 2px solid #f4a5b6; /* can take out, it's not that cute */
+	/*border-left: 2px solid #f4a5b6
+	border-right: 2px solid #f4a5b6;
+	border-top: 2px solid #f4a5b6;*/
+	transition: all 0.3s ease-in;
+	padding: 8px 8px; /* to change nav bar */
+	border-radius: 12px; /* rounding of buttons */
+}
+
+.logo img
+{
+	height: 101px;
+	float: left;
+	margin-top: 30px;
+}
+
+.btn
+{
+	color: #f4a5b6; /* under main button colours */
+	border: 1px solid #f4a5b6;
+	padding: 10px 30px;
+	text-decoration: none;
+	border-radius: 12px;
+	margin-right:  14px;
+}
+
+.button-fix
+{
+	margin-top: 34px;
+}
+
+.btn-one
+{
+	background-color: #f4a5b6;
+	color: white;
+}
+
+.btn-two:hover
+{
+	background-color: #f4a5b6;
+	color: white;
+	transition: all 0.5s ease-in;
+}
+
+/* CUTE COLOURS */
+
+/*
+soft pink: #f4a5b6
 
 */
