@@ -183,10 +183,12 @@ h1, h2
 	margin-top: 34px;
 }
 
-.btn-one
+.btn-one:hover
 {
 	background-color: #f4a5b6;
 	color: white;
+	transition: all 0.5s ease-in;
+	opacity: 0.25;
 }
 
 .btn-two:hover
@@ -194,6 +196,61 @@ h1, h2
 	background-color: #f4a5b6;
 	color: white;
 	transition: all 0.5s ease-in;
+	opacity: 0.25;
+}
+
+.btn-three:hover
+{
+	background-color: #f4a5b6;
+	color: white;
+	transition: all 0.5s ease-in;
+	opacity: 0.25;
+}
+
+.btn-four:hover
+{
+	background-color: #f4a5b6;
+	color: white;
+	transition: all 0.5s ease-in;
+	opacity: 0.25;
+}
+
+.copy
+{
+    width: 70%;
+    margin-left:15%;
+}
+
+h3:after
+{
+    width: 100px;
+    height: 2px;
+    background-color: #f4a5b6;
+    display: block;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.features h3
+{
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.alignment
+{
+    text-align: justify;
+}
+
+.features h4
+{
+    margin-top: 50px;
+}
+
+.container /* REMOVE THIS */
+{
+    list-style: none;
 }
 
 /* CUTE COLOURS */
