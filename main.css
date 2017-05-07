@@ -114,10 +114,11 @@ body
 
 header
 {
-	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/antelope-canyon.jpg);
+	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/bkgd/antelope-canyon.jpg);
 	height: 100vh; /* vertical height */
 	background-position: center;
 	background-size: cover; 
+    background-attachment: fixed; /* remove this line to see the difference in main background */
 }
 
 h1, h2
@@ -219,6 +220,7 @@ h1, h2
 {
     width: 70%;
     margin-left:15%;
+    margin-bottom:200px;
 }
 
 h3:after
@@ -229,7 +231,7 @@ h3:after
     display: block;
     content: " ";
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .features h3
@@ -243,14 +245,125 @@ h3:after
     text-align: justify;
 }
 
-.features h4
+.features h4 /* used for the spacing of the skills sections */
 {
     margin-top: 50px;
+}
+
+.features i
+{
+    font-size: 40px;
+    color:#f4a5b6;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .container /* REMOVE THIS */
 {
     list-style: none;
+}
+
+.project-showcase
+{
+    list-style: none;
+    width: 100%;
+}
+
+.project-showcase li
+{
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+.project-pic
+{
+    width: 80%;
+    height: auto;
+    margin:10px;
+    overflow: hidden;
+}
+
+.project-pic img
+{
+    width: 250px; /* change these heights and widths to make it fit as desired */
+    height: 250px;
+    transform: scale(1.11); /* scale is used for making things like 3D */
+    transition: all 0.5s; /* used for animations */
+}
+
+.project-pic img:hover
+{
+    transform: scale(1.0);
+}
+
+.project
+{
+    margin-top: 0px;
+}
+
+.pic-of-me img
+{
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 25px;
+}
+
+.info-abt-me
+{
+    margin-top: 15px;
+}
+
+.one, .two, .three
+{
+    border: 1px solid #f4a5b6;
+    display: inline-block; /* try changing some of these values with the next stuff commented */
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 25px;
+}
+
+.icon1 img
+{
+    height: 48px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icon2 img
+{
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icon3 img
+{
+    height: 42px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.clearfix
+{
+    zoom:1;
+}
+
+.clearfix:after
+{
+    visibility: hidden;
+    content:".";
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+.welcome
+{
+    margin-top: 16px;
 }
 
 /* CUTE COLOURS */
