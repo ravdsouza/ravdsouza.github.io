@@ -10,42 +10,6 @@
 
 */
 
-/*
-body{
-	height: 40%;
-	margin: 400;
-	text-align: center;
-	/*width: 81%;
-	background-color: whitesmoke;
-}
-
-h1{
-	text-align: center;
-	font-size: 50px;
-	font-family: 'Muli', sans-serif;
-	color: #471414;
-}
-
-.nav{
-	text-align: left;
-	font-family: 'Quicksand', sans-serif;
-	color: #7c1c1c;
-}
-
-.main{
-	text-align: center;
-	width: 80%;
-	/*font-family: 'Cutive', sans-serif;
-	color: #471414;
-}
-
-li {
-    list-style-type: none;
-}
-
-hr {
-	width: 50%;
-}
 
 /* FONTS 
 
@@ -85,6 +49,14 @@ font-family: 'Cutive', serif;
 
 /* START NEW CODE */
 
+/* GOOD CURSIVES
+
+- Dancing Script
+- Satisfys
+
+
+*/
+
 *
 {
 	margin: 0;
@@ -99,26 +71,70 @@ font-family: 'Cutive', serif;
 
 body
 {
-	font-family:tahoma; /* CHANGE THIS FONT */
+	font-family: monospace; /* this is the body font... change it */
 }
 
-/* MAIN INTRO */
 .start
 {
-	position: absolute;
-	width: 1140px;
+	position: relative;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -200%);
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.start h2
+{
+    padding-top: 10px;
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+@font-face
+{
+    font-family: "AutumnInNovember";
+    src: url("fonts/Autumn in November.ttf");
+}
+
+.name
+{
+    font-family: 'AutumnInNovember';
+    height: 10vh;
+    padding-left: 0;
+    font-size: 8vh;
+    padding-right: 0;
+    padding-top: 100px;;
+    padding-bottom: 40px;
+}
+
+.subsec
+{
+    font-family: 'AutumnInNovember';
+    font-size: 30px;
+    color: #859fc7;
+    border-top: 40px;
+}
+
+.features h3, .resume h3
+{
+    color: #2d4262;
+}
+
+.welcome h3, .proj h3
+{
+    color: #859fc7;
 }
 
 header
 {
-	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/bkgd/antelope-canyon.jpg);
+	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url(images/bkgd/horseshoe-bend.jpg);
 	height: 100vh; /* vertical height */
 	background-position: center;
 	background-size: cover; 
-    background-attachment: fixed; /* remove this line to see the difference in main background */
+    background-attachment: fixed;
+    position: relative;
 }
 
 h1, h2
@@ -131,7 +147,13 @@ h1, h2
 	list-style: none;
 	float: right;
 	margin-top: 60px;
-
+    background: grey;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    padding-right: 50px;
 }
 
 .nav li
@@ -140,26 +162,25 @@ h1, h2
 	margin-left: 20px;
 }
 
+.nav ul
+{
+    padding: 0;
+    margin: 0;
+}
+
 .nav li a
 {
 	text-decoration: none;
 	color: white;
-	/*font-family: times;*/
-	font-size: 90%; /* size of menu above */
+	font-size: 110%; /* size of menu above */
 	font-weight:  BOLD;
-
 }
 
 .nav li a:hover
 {
-	color: #f4a5b6;
-	border: 2px solid #f4a5b6; /* can take out, it's not that cute */
-	/*border-left: 2px solid #f4a5b6
-	border-right: 2px solid #f4a5b6;
-	border-top: 2px solid #f4a5b6;*/
-	transition: all 0.3s ease-in;
-	padding: 8px 8px; /* to change nav bar */
-	border-radius: 12px; /* rounding of buttons */
+    transition: all 0.2s ease-in;
+    color: thistle;
+    background-color: transparent;
 }
 
 .logo img
@@ -171,12 +192,16 @@ h1, h2
 
 .btn
 {
-	color: #f4a5b6; /* under main button colours */
-	border: 1px solid #f4a5b6;
+	color: #f4a5b6;
 	padding: 10px 30px;
 	text-decoration: none;
 	border-radius: 12px;
-	margin-right:  14px;
+    font-weight: bold;
+}
+
+.btn:hover
+{
+    color: #f18ea3;
 }
 
 .button-fix
@@ -184,36 +209,50 @@ h1, h2
 	margin-top: 34px;
 }
 
+.btn
+{
+    margin-left: 30px;
+}
+
 .btn-one:hover
 {
-	background-color: #f4a5b6;
+	background-color: transparent;
 	color: white;
-	transition: all 0.5s ease-in;
-	opacity: 0.25;
+	transition: all 0.25s ease;
+	opacity: background 0.1;
 }
 
 .btn-two:hover
 {
 	background-color: #f4a5b6;
 	color: white;
-	transition: all 0.5s ease-in;
-	opacity: 0.25;
+	transition: all 0.25s ease;
+	opacity: background 0.35;
 }
 
 .btn-three:hover
 {
 	background-color: #f4a5b6;
 	color: white;
-	transition: all 0.5s ease-in;
-	opacity: 0.25;
+	transition: all 0.25s ease;
+	opacity: background 0.35;
+    background: transparent;
 }
 
 .btn-four:hover
 {
+	background-color: #fce8ed;
+	color: white;
+	transition: all 0.25s ease;
+}
+
+.btn-five:hover
+{
 	background-color: #f4a5b6;
 	color: white;
-	transition: all 0.5s ease-in;
-	opacity: 0.25;
+	transition: all 0.25s ease;
+	opacity: background 0.35;
+    background-blend-mode: color;
 }
 
 .copy
@@ -226,36 +265,85 @@ h1, h2
 h3:after
 {
     width: 100px;
-    height: 2px;
-    background-color: #f4a5b6;
+    height: 3px;
+    background-color: #999999;
     display: block;
     content: " ";
     margin: 0 auto;
-    margin-top: 10px;
+}
+
+.features
+{
+    background: #d09683;
+    padding-bottom: 20px;
 }
 
 .features h3
 {
-    margin-top: 80px;
-    margin-bottom: 30px;
+    border-top: solid 40px #d09683;
+    border-bottom: 30px;
+}
+
+.fa
+{
+    padding: 0;
+    margin: 0;
+}
+
+h3
+{
+    margin-top: 0;
+}
+
+.info-abt-me p
+{
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .alignment
 {
     text-align: justify;
+    padding-bottom: 20px;
+}
+
+.features ul 
+{
+    list-style: none;
+    text-align: left;
 }
 
 .features h4 /* used for the spacing of the skills sections */
 {
-    margin-top: 50px;
+    margin-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.move
+{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 2px;
+}
+
+.description a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.smoothscroll /* this doesnt work pls fix */
+{
+    transition: all 0.3s ease;
 }
 
 .features i
 {
     font-size: 40px;
-    color:#f4a5b6;
-    margin-left: 30%;
-    margin-right: 30%;
+    color: #2d4262;
+    align-items: center;
 }
 
 .container /* REMOVE THIS */
@@ -267,6 +355,12 @@ h3:after
 {
     list-style: none;
     width: 100%;
+    margin-top: 4px;
+}
+
+.project-showcase h3
+{
+    padding-top: 40px;
 }
 
 .project-showcase li
@@ -278,40 +372,50 @@ h3:after
 
 .project-pic
 {
-    width: 80%;
-    height: auto;
-    margin:10px;
-    overflow: hidden;
+    margin: 10px;
+    align-content: center;
 }
 
 .project-pic img
 {
-    width: 250px; /* change these heights and widths to make it fit as desired */
-    height: 250px;
-    transform: scale(1.11); /* scale is used for making things like 3D */
+    width: 80%; /* change these heights and widths to make it fit as desired */
+    height: 80%;
+    max-width: 200px;
+    transform: scale(1.1); /* scale is used for making things like 3D */
     transition: all 0.5s; /* used for animations */
+    opacity: 0.7; 
+    position: relative;
+    padding-top: 40px;
 }
 
 .project-pic img:hover
 {
-    transform: scale(1.0);
+    transform: scale(1.2); /* for zoom in effect*/
+    opacity: 1.0;
+}
+
+figcaption
+{
+    padding-top: 20px;
+    align-content: center;
 }
 
 .project
 {
-    margin-top: 0px;
+    padding-top: 40px;
+    background: #73605b;
+    padding-bottom: 50px;
 }
 
 .pic-of-me img
 {
     width: 40%;
-    margin-left: 10%;
-    margin-top: 25px;
+    padding-top: 40px;
 }
 
 .info-abt-me
 {
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 .one, .two, .three
@@ -326,30 +430,9 @@ h3:after
     margin-top: 25px;
 }
 
-.icon1 img
-{
-    height: 48px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.icon2 img
-{
-    height: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.icon3 img
-{
-    height: 42px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 .clearfix
 {
-    zoom:1;
+    zoom: 1;
 }
 
 .clearfix:after
@@ -363,7 +446,138 @@ h3:after
 
 .welcome
 {
-    margin-top: 16px;
+    border-top: solid 50px #73605b;
+    border-bottom: solid 55px #73605b;
+    background: #73605b;
+}
+
+.btn-block
+{
+    background-color: #f4a5b6;
+    color: white;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.resume
+{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background: #d09683;
+}
+
+.resume-thanks
+{
+    padding: 40px;
+    padding-bottom: 10px;
+}
+
+.resume a
+{
+    align-content: center;
+    font-size: 18px;
+}
+
+.message
+{
+    margin-top: 40px;
+}
+
+.contact-me
+{
+    border-top: solid 40px #73605b;
+    border-bottom: solid 40px #73605b;
+    background: #73605b;
+}
+
+.scroll-to-top {
+   width: 40px;
+   height: 40px;
+   opacity: 1;
+   position: fixed;
+   bottom: 460px;
+   right: 80px;
+ }
+
+.scroll-to-top img
+{
+    height: 40px;
+    width: 40px;
+    margin-top: 450px;
+    margin-left: 70px;
+}
+
+footer
+{
+    padding: 10px;
+    background-color: #f4a5b6;
+}
+
+.footer-msg
+{
+    margin: 0;
+    color: black;
+    background-color: #f4a5b6;
+}
+
+.social-media-icons i
+{
+    font-size: 40px;
+    color:#f4a5b6;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.social-media-icons i:hover
+{
+    color:#f18ea3;
+}
+
+@media(max-width:768px)
+{
+    font-size:12px; /* idk ????? */
+}
+
+.contact-msg p
+{
+    font-size: 20px;
+    align-content: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.btn-warning
+{
+    margin: 0px;
+}
+
+.btn-warning:hover
+{
+    color: white;
+    background-color: darkred;
+}
+
+.btn1
+{
+    margin-top: 20px;
+}
+
+.btn2
+{
+    margin-bottom: 40px;
+}
+
+p::selection, h3::selection, h1::selection, h2::selection, i::selection, h4::selection, h5::selection, h6::selection, li::selection, img::selection, figcaption::selection, a::selection
+{
+    background: indianred;
+    color: white;
+}
+
+p::-moz-selection, h3::-moz-selection, h1::-moz-selection, h2::-moz-selection, i::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, li::-moz-selection, img::-moz-selection, figcaption::-moz-selection, a::-moz-selection
+{
+    background: indianred;
+    color: white;
 }
 
 /* CUTE COLOURS */
@@ -372,3 +586,5 @@ h3:after
 soft pink: #f4a5b6
 
 */
+
+/* Copyright © 2017 Raveena D'Souza */
