@@ -1,61 +1,5 @@
-/* RAVEENA D'SOUZA 2017 */
-
-/*
-
-	Good colours:
-	mistyrose: very light soft pink;
-	palevioletred: comparable to expresso by sally hansen;
-	thistle: very pale purple;
-	whitesmoke: off white, very light grey;
-
-*/
-
-
-/* FONTS 
-
-font-family: 'Roboto', sans-serif;
-font-family: 'Slabo 27px', serif;
-font-family: 'Caveat Brush', cursive;
-font-family: 'Muli', sans-serif;
-font-family: 'Inconsolata', monospace;
-font-family: 'Hind', sans-serif;
-font-family: 'Arvo', serif;
-font-family: 'Nunito', sans-serif;
-font-family: 'Merriweather Sans', sans-serif;
-font-family: 'Mada', sans-serif;
-font-family: 'Roboto Mono', monospace;
-font-family: 'Baloo', cursive;
-font-family: 'PT Sans Caption', sans-serif;
-font-family: 'Amatic SC', cursive;
-font-family: 'Source Code Pro', monospace;
-font-family: 'Kreon', serif;
-font-family: 'Della Respira', serif;
-font-family: 'Boogaloo', cursive;
-font-family: 'Damion', cursive;
-font-family: 'Fredoka One', cursive;
-font-family: 'Sacramento', cursive;
-font-family: 'Cousine', monospace;
-font-family: 'Homemade Apple', cursive;
-font-family: 'Gochi Hand', cursive;
-font-family: 'Overpass Mono', monospace;
-font-family: 'Ubuntu Mono', monospace;
-font-family: 'Niconne', cursive;
-font-family: 'Montserrat Alternates', sans-serif;
-font-family: 'Slabo 13px', serif;
-font-family: 'Grand Hotel', cursive;
-font-family: 'Cutive', serif;
-
-*/
-
-/* START NEW CODE */
-
-/* GOOD CURSIVES
-
-- Dancing Script
-- Satisfys
-
-
-*/
+/*  Raveena D'Souza
+    main.css for raveenadsouza.com */
 
 *
 {
@@ -71,7 +15,7 @@ font-family: 'Cutive', serif;
 
 body
 {
-	font-family: monospace; /* this is the body font... change it */
+	font-family: monospace;
 }
 
 .start
@@ -130,7 +74,7 @@ body
 header
 {
 	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url(images/bkgd/horseshoe-bend.jpg);
-	height: 100vh; /* vertical height */
+	height: 100vh;
 	background-position: center;
 	background-size: cover; 
     background-attachment: fixed;
@@ -172,7 +116,7 @@ h1, h2
 {
 	text-decoration: none;
 	color: white;
-	font-size: 110%; /* size of menu above */
+	font-size: 110%;
 	font-weight:  BOLD;
 }
 
@@ -378,11 +322,11 @@ h3
 
 .project-pic img
 {
-    width: 80%; /* change these heights and widths to make it fit as desired */
+    width: 80%;
     height: 80%;
     max-width: 200px;
-    transform: scale(1.1); /* scale is used for making things like 3D */
-    transition: all 0.5s; /* used for animations */
+    transform: scale(1.1);
+    transition: all 0.5s;
     opacity: 0.7; 
     position: relative;
     padding-top: 40px;
@@ -421,7 +365,7 @@ figcaption
 .one, .two, .three
 {
     border: 1px solid #f4a5b6;
-    display: inline-block; /* try changing some of these values with the next stuff commented */
+    display: inline-block;
     border-radius:50%;
     width:50px;
     height:50px;
@@ -579,12 +523,5 @@ p::-moz-selection, h3::-moz-selection, h1::-moz-selection, h2::-moz-selection, i
     background: indianred;
     color: white;
 }
-
-/* CUTE COLOURS */
-
-/*
-soft pink: #f4a5b6
-
-*/
 
 /* Copyright © 2017 Raveena D'Souza */
