@@ -15,7 +15,7 @@
 
 body
 {
-	font-family: monospace;
+	font-family: 'Arial';
 }
 
 .start
@@ -59,6 +59,7 @@ body
     font-size: 30px;
     color: #859fc7;
     border-top: 40px;
+    padding-top: 40px;
 }
 
 .features h3, .resume h3
@@ -73,7 +74,7 @@ body
 
 header
 {
-	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url(images/bkgd/horseshoe-bend.jpg);
+	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url(images/bkgd/crete-greece.jpg);
 	height: 100vh;
 	background-position: center;
 	background-size: cover; 
@@ -141,21 +142,19 @@ h1, h2
 	text-decoration: none;
 	border-radius: 12px;
     font-weight: bold;
+    background-color: transparent;
+    margin-left: 30px;
 }
 
 .btn:hover
 {
     color: #f18ea3;
+    background-color: transparent;
 }
 
 .button-fix
 {
 	margin-top: 34px;
-}
-
-.btn
-{
-    margin-left: 30px;
 }
 
 .btn-one:hover
@@ -328,7 +327,7 @@ h3
     transform: scale(1.1);
     transition: all 0.5s;
     opacity: 0.7; 
-    position: relative;
+    position: relative; 
     padding-top: 40px;
 }
 
@@ -336,12 +335,6 @@ h3
 {
     transform: scale(1.2); /* for zoom in effect*/
     opacity: 1.0;
-}
-
-figcaption
-{
-    padding-top: 20px;
-    align-content: center;
 }
 
 .project
@@ -372,6 +365,11 @@ figcaption
     text-align: center;
     line-height: 50px;
     margin-top: 25px;
+}
+
+.resume a
+{
+    align-items: center;
 }
 
 .clearfix
@@ -471,6 +469,7 @@ footer
     color:#f4a5b6;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 30px;
 }
 
 .social-media-icons i:hover
@@ -487,7 +486,10 @@ footer
 {
     font-size: 20px;
     align-content: center;
-    padding: 30px;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: center;
 }
 
@@ -510,6 +512,16 @@ footer
 .btn2
 {
     margin-bottom: 40px;
+}
+
+.the-modal
+{
+    background-color: #f2f2f2;
+}
+
+.modal-body
+{
+    padding: 40px;
 }
 
 p::selection, h3::selection, h1::selection, h2::selection, i::selection, h4::selection, h5::selection, h6::selection, li::selection, img::selection, figcaption::selection, a::selection
