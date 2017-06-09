@@ -1,7 +1,7 @@
 /*
 
 JavaScript for raveenadsouza.com
-Copyright 2017 Raveena D'Souza
+Copyright © 2017 Raveena D'Souza
 
 */
 
@@ -24,22 +24,23 @@ nameField.onblur = function()
 };
 */
 
-function validate() {
-    alert("hejkfdge");
-    var error = document.getElementById("error");
-    
-    var name = document.getElementById("n").nodeValue;
-    var email = document.getElementById("e").nodeValue;
-    var subj = document.getElementById("s").nodeValue;
-    var msg = document.getElementById("m").nodeValue;
-    
-    
-    
-    if (name == "" || email = "" || msg == "")
+// SENDING FORM EMAIL WITH EMAIL CLIENT
+
+function sendMail()
+{
+    var name = document.getElementById("n").value;
+    var email = document.getElementById("e").value;
+    var subj = document.getElementById("s").value;
+    var msg = document.getElementById("m").value;
+    if (!(subj == ""))
         {
-            error.innerHTML = "Please fill the message box";
+            window.location.href = "mailto:radsouza@edu.uwaterloo.ca?subject="+subj+"&body=Name: "+name+"        Email: "+email+"        Message: "+msg;
         }
-}
+    else
+        {
+          window.location.href = "mailto:radsouza@edu.uwaterloo.ca?subject=Message for Raveena D'Souza&body=Name: "+name+"        Email: "+email+"        Message: "+msg;
+        }
+} 
 
 // SLIDESHOWS
 
@@ -75,3 +76,32 @@ modalTexts[4].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
 modalTexts[5].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
 modalTexts[6].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
 modalTexts[7].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
+
+
+// SMOOTH SCROLLING (w/ jQuery using code from w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll with some changes made)
+/*
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+© 
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // 700 is the # of milliseconds to links
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 700, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+*/
