@@ -5,25 +5,6 @@ Copyright © 2017 Raveena D'Souza
 
 */
 
-// CODE FOR FORMS
-/*
-var nameField = document.getElementById("n");
-nameField.onfocus = function() 
-{
-    if(nameField.value == "NAME")
-        {
-            nameField.value = "";
-        }
-};
-nameField.onblur = function() 
-{
-    if(nameField.value == "")
-        {
-            nameField.value = "NAME";
-        }
-};
-*/
-
 // SENDING FORM EMAIL WITH EMAIL CLIENT
 
 function sendMail()
@@ -67,6 +48,29 @@ faceImg.onclick = function()
 */
 
 // MODAL CONTENT
+
+var modalPics = document.getElementsByClassName("modal-pic"); // get images
+var modal1imgs = ["images/proj/tron-days-work-sq.jpg"];
+var modal2imgs = ["images/proj/final-project-sq.jpg", "final-project-design-sq.jpg", "images/proj/final-project-group-sq.jpg"];
+var modal3imgs = ["images/proj/wear-hacks-myo.jpg", "images/proj/wear-hacks-group.jpg", "wear-hacks-myo-2.jpg"];
+var modal4imgs = [];
+var modal5imgs = ["images/proj/catalyst-3/jpg", "images/proj/catalyst-2-sq", "images/proj/catalyst-google.jpg"];
+var modal6imgs = [];
+var modal7imgs = ["images/proj/eng-ideas-clinic.jpg"];
+var modal8imgs = [];
+var modalImages = [modal1imgs, modal2imgs, modal3imgs, modal4imgs, modal5imgs, modal6imgs, modal7imgs, modal8imgs];
+var count = 0;
+
+function modalSlideshow(ind)
+{
+    modalPics[ind].setAttribute("src", modalImages[ind][count])
+    count++;
+    if (count >= modalImages[ind].length)
+            count = 0;
+} 
+
+var two = setInterval(modalSlideshow(1), 2000);
+
 var modalTexts = document.getElementsByClassName("modal-text");
 modalTexts[0].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
 modalTexts[1].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
@@ -78,8 +82,9 @@ modalTexts[6].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
 modalTexts[7].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
 
 
-// SMOOTH SCROLLING (w/ jQuery using code from w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll with some changes made)
-/*
+// SMOOTH SCROLLING (w/ jQuery using code from 
+w3schools.com w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll with some changes made)
+
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -88,7 +93,7 @@ $(document).ready(function(){
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-© 
+
       // Store hash
       var hash = this.hash;
 
@@ -99,9 +104,16 @@ $(document).ready(function(){
       }, 700, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+        //window.location.hash = hash;
       });
     } // End if
   });
 });
-*/
+
+
+// TEXT OVERLAP ON IMAGE
+hide = document.getElementsByClassName("hide");
+function hideText()
+{
+    hide.setAttribute("visibility", "hidden");
+}
