@@ -5,14 +5,23 @@ Copyright © 2017 Raveena D'Souza
 
 */
 
-// SENDING FORM EMAIL WITH EMAIL CLIENT
+// ======== SENDING FORM EMAIL WITH EMAIL CLIENT ========
 
-function sendMail()
+function checkMail()
 {
     var name = document.getElementById("n").value;
     var email = document.getElementById("e").value;
     var subj = document.getElementById("s").value;
     var msg = document.getElementById("m").value;
+    
+    if (!(name == "") && !(email == "") && !(msg == ""))
+        {
+            sendMail();
+        }
+}
+
+function sendMail()
+{
     if (!(subj == ""))
         {
             window.location.href = "mailto:radsouza@edu.uwaterloo.ca?subject="+subj+"&body=Name: "+name+"        Email: "+email+"        Message: "+msg;
@@ -23,7 +32,7 @@ function sendMail()
         }
 } 
 
-// SLIDESHOWS
+// ======== SLIDESHOWS ========
 
 var faceImg = document.getElementById("face"); // get image
 var imgArray = ["images/proj/catalyst-google.PNG", "images/proj/wear-hacks-group.jpg", "images/proj/eng-ideas-clinic.jpg", "images/me.jpg"];
@@ -47,7 +56,7 @@ faceImg.onclick = function()
 
 */
 
-// MODAL CONTENT
+// ======== MODAL CONTENT ========
 
 var modalPics = document.getElementsByClassName("modal-pic"); // get images
 var modal1imgs = ["images/proj/tron-days-work-sq.jpg"];
@@ -82,7 +91,9 @@ modalTexts[6].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
 modalTexts[7].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
 
 
-// SMOOTH SCROLLING (w/ jQuery using code from w3schools.com w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll with some changes made)
+// ======== SMOOTH SCROLLING ========
+
+// done w/ jQuery using code from w3schools.com (w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll with some changes made)
 
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -110,7 +121,7 @@ $(document).ready(function(){
 });
 
 
-// TEXT OVERLAP ON IMAGE
+// ======== TEXT OVERLAP ON IMAGE ========
 hide = document.getElementsByClassName("hide");
 function hideText()
 {
