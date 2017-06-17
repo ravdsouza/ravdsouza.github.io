@@ -82,8 +82,7 @@ modalTexts[6].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
 modalTexts[7].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
 
 
-// SMOOTH SCROLLING (w/ jQuery using code from 
-w3schools.com w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll with some changes made)
+// SMOOTH SCROLLING (w/ jQuery using code from w3schools.com w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll with some changes made)
 
 $(document).ready(function(){
   // Add smooth scrolling to all links
