@@ -41,12 +41,12 @@
           <!-- NAVIGATION -->
         <div>
             <section>
-              <ul class="nav text-center">
+              <ul class="nav text-center center">
                 <li><a class="btn btn-one" href="#home">HOME</a>
                 <li><a class="btn btn-two" href="#welcome">ABOUT</a>
                 <li><a class="btn btn-three" href="#skills">SKILLS</a>
                 <li><a class="btn btn-four" href="#proj">PROJECTS</a>
-                <li><a class="btn btn-five" href="#resume" target="_blank">RÉSUMÉ</a>
+                <li><a class="btn btn-five" href="#resume">RÉSUMÉ</a>
                 <li><a class="btn btn-six" href="#contact">CONTACT ME</a>
               </ul>
             </section>
@@ -78,7 +78,7 @@
                 <div class="col-md-6">
                     <div class="pic-of-me">
                         <div class="text-center">
-                            <img id="face" src="images/me.jpg">
+                            <img id="face" src="images/me.jpg" alt="Pictures of me">
                         </div>
                     </div>
                 </div>
@@ -194,7 +194,7 @@
                 <li>
                     <!-- image modal button -->
               <figure class="project-pic text-center">
-                    <img type="button" data-toggle="modal" data-target="#myModal1" src="images/proj/tron-days-work-sq.jpg">
+                    <img type="button" data-toggle="modal" data-target="#myModal1" src="images/proj/tron-days-work-sq.jpg" alt="Tron Days">
                 </figure>
 
               <!-- modal -->
@@ -226,7 +226,7 @@
                 <li>
                     <!-- image modal button -->
               <figure class="project-pic text-center">
-                  <img type="button" onmouseover="hideText()"; src="images/proj/final-project-sq.jpg" data-toggle="modal" data-target="#myModal2">
+                  <img type="button" onmouseover="hideText()"; src="images/proj/final-project-sq.jpg" data-toggle="modal" data-target="#myModal2" alt="MTE 100/GENE 121 final project">
                 </figure>
 
               <!-- modal -->
@@ -253,7 +253,7 @@
                 <li>
                     <!-- image modal button -->
               <figure class="project-pic text-center">
-                    <img type="button" src="images/proj/wear-hacks-myo.jpg" data-toggle="modal" data-target="#myModal3">
+                    <img type="button" src="images/proj/wear-hacks-myo.jpg" data-toggle="modal" data-target="#myModal3" alt="WearHacks 2017">
                 </figure>
 
               <!-- modal -->
@@ -280,7 +280,7 @@
                 <li>
                     <!-- image modal button -->
                 <figure class="project-pic text-center">
-                    <img type="button" src="images/proj/wear-hacks-group.jpg" data-toggle="modal" data-target="#myModal4">
+                    <img type="button" src="images/proj/wear-hacks-group.jpg" data-toggle="modal" data-target="#myModal4" alt="Kumon Math and Reading">
                 </figure>
 
               <!-- modal -->
@@ -308,7 +308,7 @@
                 <li>
                     <!-- image modal button -->
               <figure class="project-pic text-center">
-                    <img type="button" src="images/proj/catalyst-3.jpg" data-toggle="modal" data-target="#myModal5">
+                    <img type="button" src="images/proj/catalyst-3.jpg" data-toggle="modal" data-target="#myModal5" alt="Catalyst Girls Conference">
                 </figure>
 
               <!-- modal -->
@@ -335,7 +335,7 @@
                 <li>
                     <!-- image modal button -->
               <figure class="project-pic text-center">
-                    <img type="button" src="images/coming-soon.jpg" data-toggle="modal" data-target="#myModal6">
+                    <img type="button" src="images/coming-soon.jpg" data-toggle="modal" data-target="#myModal6" alt="Summer Car Project">
                 </figure>
 
               <!-- modal -->
@@ -362,7 +362,7 @@
                 <li>
                     <!-- image modal button -->
               <figure class="project-pic text-center">
-                    <img type="button" src="images/proj/eng-ideas-clinic.jpg" data-toggle="modal" data-target="#myModal7">
+                    <img type="button" src="images/proj/eng-ideas-clinic.jpg" data-toggle="modal" data-target="#myModal7" alt="Engineering Ideas Clinic">
                 </figure>
 
               <!-- modal -->
@@ -389,7 +389,7 @@
                 <li>
                     <!-- image modal button -->
               <figure class="project-pic text-center">
-                    <img type="button" src="images/proj/catalyst-1-sq.jpg" data-toggle="modal" data-target="#myModal8">
+                    <img type="button" src="images/proj/catalyst-1-sq.jpg" data-toggle="modal" data-target="#myModal8" alt="Mini factory">
                 </figure>
 
               <!-- modal -->
@@ -439,7 +439,7 @@
         <div class="container text-center">
             <h3 class="text-center subsec" title="contact">contact</h3>
         </div>
-        <!-- action="mailto:radsouza@edu.uwaterloo.ca"  -->
+        
         <form method="post" enctype="text/plain" name="comtact-form" action="mailto:radsouza@edu.uwaterloo.ca">
             
             <div class="row message">
@@ -461,7 +461,7 @@
                     <textarea class="form-control" rows="7" id="m" placeholder="Message *" required></textarea>
 
                     <input type="reset" value="RESET" class="btn btn-warning btn-block btn1" readonly="readonly">
-                    <input value="SEND" value="SUBMIT" class="btn btn-warning btn-block btn2" onClick="sendMail()"; readonly="readonly">                 
+                    <input type="submit" value="SEND" class="btn btn-warning btn-block btn2" onClick="checkMail()"; readonly="readonly">                 
 
                 </div>
             </div>
@@ -474,7 +474,7 @@
 
     <footer>
         <div>
-            <a href="#" class="scroll-to-top"><img src="images/top.png"></a>
+            <a href="#home" class="scroll-to-top"><img src="images/top.png"></a>
         </div>
         <div class="footer-msg text-center">
             <h5>Copyright © 2017 Raveena D'Souza</h5>
