@@ -1,6 +1,9 @@
 /*  Raveena D'Souza
     main.css for raveenadsouza.com */
 
+
+                                        /* ======== GENERAL ======== */
+
 *
 {
 	margin: 0;
@@ -15,42 +18,13 @@
 
 body
 {
-	font-family: 'Arial';
-}
-
-.start
-{
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -200%);
-    padding-top: 80px;
-    padding-bottom: 30px;
-}
-
-.start h2
-{
-    padding-top: 10px;
-    font-size: 25px;
-    padding-left: 50px;
-    padding-right: 50px;
+	font-family: 'Lato', sans-serif;
 }
 
 @font-face
 {
     font-family: "AutumnInNovember";
     src: url("fonts/Autumn in November.ttf");
-}
-
-.name
-{
-    font-family: 'AutumnInNovember';
-    height: 10vh;
-    padding-left: 0;
-    font-size: 8vh;
-    padding-right: 0;
-    padding-top: 100px;;
-    padding-bottom: 40px;
 }
 
 .subsec
@@ -72,67 +46,9 @@ body
     color: #859fc7;
 }
 
-header
-{
-	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url(images/bkgd/crete-greece.jpg);
-	height: 100vh;
-	background-position: center;
-	background-size: cover; 
-    background-attachment: fixed;
-    position: relative;
-}
-
 h1, h2
 {
 	color: white;
-}
-
-.nav
-{
-	list-style: none;
-	float: right;
-	margin-top: 60px;
-    background: grey;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    z-index: 1;
-    position: fixed;
-    padding-right: 50px;
-}
-
-.nav li
-{
-	display: inline-block;
-	margin-left: 20px;
-}
-
-.nav ul
-{
-    padding: 0;
-    margin: 0;
-}
-
-.nav li a
-{
-	text-decoration: none;
-	color: white;
-	font-size: 110%;
-	font-weight:  BOLD;
-}
-
-.nav li a:hover
-{
-    transition: all 0.2s ease-in;
-    color: thistle;
-    background-color: transparent;
-}
-
-.logo img
-{
-	height: 101px;
-	float: left;
-	margin-top: 30px;
 }
 
 .btn
@@ -152,9 +68,125 @@ h1, h2
     background-color: transparent;
 }
 
-.button-fix
+h3:after
 {
-	margin-top: 34px;
+    width: 100px;
+    height: 3px;
+    background-color: #999999;
+    display: block;
+    content: " ";
+    margin: 0 auto;
+}
+
+h3
+{
+    margin-top: 0;
+}
+
+.smoothscroll /* this doesnt work pls fix */
+{
+    transition: all 0.3s ease;
+}
+
+.container
+{
+    list-style: none;
+}
+
+@media(max-width:768px)
+{
+    font-size:12px; /* idk ????? */
+}
+
+p::selection, h3::selection, h1::selection, h2::selection, i::selection, h4::selection, h5::selection, h6::selection, li::selection, img::selection, figcaption::selection, a::selection
+{
+    background: indianred;
+    color: white;
+}
+
+p::-moz-selection, h3::-moz-selection, h1::-moz-selection, h2::-moz-selection, i::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, li::-moz-selection, img::-moz-selection, figcaption::-moz-selection, a::-moz-selection
+{
+    background: indianred;
+    color: white;
+}
+
+                                        /* ======== HEADER ======== */
+
+.start
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    padding-top: 0px;
+    margin-bottom: 0;
+    
+}
+
+.name
+{
+    padding: 0;
+    margin: 0;
+}
+
+.start h2
+{
+    padding-top: 10px;
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header
+{
+	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url(images/bkgd/crete-greece.jpg);
+	height: 100vh;
+	background-position: center;
+	background-size: cover; 
+    background-attachment: fixed;
+    position: relative;
+}
+
+.nav
+{
+	list-style: none;
+	float: right;
+    background: #b3e0ff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    padding-right: 50px;
+}
+
+.nav li
+{
+	display: inline-block;
+	margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+}
+
+.nav ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+.nav li a
+{
+	text-decoration: none;
+	color: white;
+	font-size: 110%;
+	font-weight:  BOLD;
+}
+
+.nav li a:hover
+{
+    transition: all 0.2s ease-in;
+    color: #007acc;
+    background-color: transparent;
 }
 
 .btn-one:hover
@@ -198,32 +230,78 @@ h1, h2
     background-blend-mode: color;
 }
 
-.copy
+.btn-six:hover
 {
-    width: 70%;
-    margin-left:15%;
-    margin-bottom:200px;
+	background-color: #f4a5b6;
+	color: white;
+	transition: all 0.25s ease;
+	opacity: background 0.35;
+    background-blend-mode: color;
 }
 
-h3:after
+.description a
 {
-    width: 100px;
-    height: 3px;
-    background-color: #999999;
-    display: block;
-    content: " ";
-    margin: 0 auto;
+    color: white;
+    text-decoration: none;
 }
+
+                                        /* ======== WELCOME AND ABOUT ME ======== */
+
+.info-abt-me p
+{
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #859fc7;
+}
+
+.alignment
+{
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.pic-of-me img
+{
+    width: 40%;
+    padding-top: 40px;
+}
+
+.info-abt-me
+{
+    padding-top: 15px;
+}
+
+.one, .two, .three
+{
+    border: 1px solid #f4a5b6;
+    display: inline-block;
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 25px;
+}
+
+.welcome
+{
+    border-top: solid 50px #003d66;
+    border-bottom: solid 55px #003d66;
+    background: #003d66;
+}
+
+                                        /* ======== SKILLS ======== */
 
 .features
 {
-    background: #d09683;
+    background: #b3e0ff;
     padding-bottom: 20px;
 }
 
 .features h3
 {
-    border-top: solid 40px #d09683;
+    border-top: solid 40px #b3e0ff;
     border-bottom: 30px;
 }
 
@@ -231,24 +309,6 @@ h3:after
 {
     padding: 0;
     margin: 0;
-}
-
-h3
-{
-    margin-top: 0;
-}
-
-.info-abt-me p
-{
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.alignment
-{
-    text-align: justify;
-    padding-bottom: 20px;
 }
 
 .features ul 
@@ -269,17 +329,8 @@ h3
     text-align: center;
     padding-top: 20px;
     padding-bottom: 2px;
-}
-
-.description a
-{
-    color: white;
-    text-decoration: none;
-}
-
-.smoothscroll /* this doesnt work pls fix */
-{
-    transition: all 0.3s ease;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .features i
@@ -289,10 +340,7 @@ h3
     align-items: center;
 }
 
-.container /* REMOVE THIS */
-{
-    list-style: none;
-}
+                                        /* ======== PROJECTS ======== */
 
 .project-showcase
 {
@@ -342,34 +390,7 @@ h3
     padding-top: 40px;
     background: #73605b;
     padding-bottom: 50px;
-}
-
-.pic-of-me img
-{
-    width: 40%;
-    padding-top: 40px;
-}
-
-.info-abt-me
-{
-    padding-top: 15px;
-}
-
-.one, .two, .three
-{
-    border: 1px solid #f4a5b6;
-    display: inline-block;
-    border-radius:50%;
-    width:50px;
-    height:50px;
-    text-align: center;
-    line-height: 50px;
-    margin-top: 25px;
-}
-
-.resume a
-{
-    align-items: center;
+    padding-bottom: 80px;
 }
 
 .clearfix
@@ -386,20 +407,28 @@ h3
     clear: both;
 }
 
-.welcome
+.the-modal
 {
-    border-top: solid 50px #73605b;
-    border-bottom: solid 55px #73605b;
-    background: #73605b;
+    background-color: #f2f2f2;
+    opacity: 0.9;
 }
 
-.btn-block
+.modal-body
 {
-    background-color: #f4a5b6;
-    color: white;
-    border-radius: 4px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    padding: 40px;
+}
+
+.modal-pic
+{
+    width: 40%;
+    max-height: 400px;
+}
+
+                                        /* ======== RESUME ======== */
+
+.resume a
+{
+    align-items: center;
 }
 
 .resume
@@ -421,6 +450,28 @@ h3
     font-size: 18px;
 }
 
+                                        /* ======== CONTACT ME ======== */
+
+.name
+{
+    font-family: 'AutumnInNovember';
+    height: 10vh;
+    padding-left: 0;
+    font-size: 8vh;
+    padding-right: 0;
+    padding-top: 100px;;
+    padding-bottom: 40px;
+}
+
+.btn-block
+{
+    background-color: #f4a5b6;
+    color: white;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 .message
 {
     margin-top: 40px;
@@ -431,36 +482,6 @@ h3
     border-top: solid 40px #73605b;
     border-bottom: solid 40px #73605b;
     background: #73605b;
-}
-
-.scroll-to-top {
-   width: 40px;
-   height: 40px;
-   opacity: 1;
-   position: fixed;
-   bottom: 460px;
-   right: 80px;
- }
-
-.scroll-to-top img
-{
-    height: 40px;
-    width: 40px;
-    margin-top: 450px;
-    margin-left: 70px;
-}
-
-footer
-{
-    padding: 10px;
-    background-color: #f4a5b6;
-}
-
-.footer-msg
-{
-    margin: 0;
-    color: black;
-    background-color: #f4a5b6;
 }
 
 .social-media-icons i
@@ -475,11 +496,6 @@ footer
 .social-media-icons i:hover
 {
     color:#f18ea3;
-}
-
-@media(max-width:768px)
-{
-    font-size:12px; /* idk ????? */
 }
 
 .contact-msg p
@@ -514,26 +530,39 @@ footer
     margin-bottom: 40px;
 }
 
-.the-modal
+                                        /* ======== FOOTER ======== */
+
+.scroll-to-top {
+   width: 40px;
+   height: 40px;
+   opacity: 1;
+   position: fixed;
+   bottom: 460px;
+   right: 80px;
+ }
+
+.scroll-to-top img
 {
-    background-color: #f2f2f2;
+    height: 40px;
+    width: 40px;
+    margin-top: 450px;
+    margin-left: 70px;
 }
 
-.modal-body
+footer
 {
-    padding: 40px;
+    padding: 10px;
+    background-color: #f4a5b6;
 }
 
-p::selection, h3::selection, h1::selection, h2::selection, i::selection, h4::selection, h5::selection, h6::selection, li::selection, img::selection, figcaption::selection, a::selection
+.footer-msg
 {
-    background: indianred;
-    color: white;
+    margin: 0;
+    color: black;
+    background-color: #f4a5b6;
 }
 
-p::-moz-selection, h3::-moz-selection, h1::-moz-selection, h2::-moz-selection, i::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, li::-moz-selection, img::-moz-selection, figcaption::-moz-selection, a::-moz-selection
-{
-    background: indianred;
-    color: white;
-}
+                                        /* ======== EXTRA CSS ======== */
+
 
 /* Copyright © 2017 Raveena D'Souza */
