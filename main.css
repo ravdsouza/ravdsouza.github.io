@@ -49,19 +49,20 @@ body
 
 h1, h2
 {
-	color: white;
+	color: #e6e6e6;
 }
 
 .btn
 {
 	color: #f4a5b6;
-	padding: 10px 15px 10px 10px;
+	padding: 10px;
 	text-decoration: none;
 	border-radius: 12px;
-    font-weight: bold;
-    background-color: transparent;
-    margin-left: 15px;
-    border: 0;
+    	font-weight: bold;
+    	background-color: transparent;
+   	margin-left: 15px;
+    	border: 0;
+    	text-shadow: 1px 1px grey;
 }
 
 .btn:hover
@@ -144,6 +145,7 @@ p::-moz-selection, h3::-moz-selection, h1::-moz-selection, h2::-moz-selection, i
 
 header
 {
+    /* Image used is by Cody Wilson and can be seen at https://500px.com/photo/39662100/wallowa-oregon-by-cody-wilson */
 	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url(images/bkgd/wallowa-oregon-2.jpg);
 	height: 100vh;
 	background-position: top;
@@ -156,14 +158,13 @@ header
 {
 	list-style: none;
 	float: right;
-    background: black;
-    opacity: 0.7;
+    background: #333333;
+    opacity: 0.9;
     margin: 0;
     padding: 0;
     width: 100%;
     z-index: 1;
     position: fixed;
-    padding-right: 50px;
 }
 
 .nav li
@@ -194,6 +195,7 @@ header
     transition: all 0.2s ease-in;
     color: #007acc;
     background-color: transparent;
+    text-shadow: 1px 1px #000000;
 }
 
 .nav li a:active
@@ -203,7 +205,12 @@ header
 
 .nav li a:visited
 {
-    background-color: black;
+    background-color: #333333;
+}
+
+.nav li a:focused
+{
+    background-color: #333333;
 }
 
 .btn-one:hover, .btn-two:hover, .btn-three:hover, btn-four:hover, .btn-five:hover, .btn-six:hover
@@ -226,8 +233,8 @@ header
 .info-abt-me p
 {
     padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
     color: #859fc7;
 }
 
@@ -239,8 +246,8 @@ header
 
 .pic-of-me img
 {
-    width: 40%;
     padding-top: 40px;
+    max-height: 300px;
 }
 
 .info-abt-me
@@ -314,6 +321,11 @@ header
     font-size: 40px;
     color: #2d4262;
     align-items: center;
+}
+
+.shadow
+{
+    text-shadow: 1px 1px grey;
 }
 
                                         /* ======== PROJECTS ======== */
@@ -456,6 +468,7 @@ header
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 30px;
+    text-shadow: 1px 1px grey;
 }
 
 .social-media-icons i:hover
@@ -479,10 +492,10 @@ header
     margin: 0px;
 }
 
-.btn-warning:hover
+.btn-warning:hover, .btn-warning:active, .btn-warning:visited
 {
     color: white;
-    background-color: darkred;
+    background-color: #f18ea3;
 }
 
 .btn1
