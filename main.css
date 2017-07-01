@@ -58,11 +58,20 @@ h1, h2
 	padding: 10px;
 	text-decoration: none;
 	border-radius: 12px;
-    	font-weight: bold;
-    	background-color: transparent;
+    font-weight: bold;
+    background-color: transparent;
    	margin-left: 15px;
-    	border: 0;
-    	text-shadow: 1px 1px grey;
+    border: 0;
+    text-shadow: 1px 1px grey;
+    align-content: center;
+    display: inline;
+}
+
+.btn:visited, .btn:active
+{
+    background-color: transparent;
+    box-shadow: none;
+    text-shadow: none;
 }
 
 .btn:hover
@@ -235,6 +244,7 @@ header
     padding-top: 40px;
     padding-left: 150px;
     padding-right: 150px;
+    padding-top: 65px;
     color: #859fc7;
 }
 
@@ -269,7 +279,7 @@ header
 
 .welcome
 {
-    border-top: solid 50px #003d66;
+    border-top: solid 70px #003d66;
     border-bottom: solid 55px #003d66;
     background: #003d66;
 }
@@ -297,7 +307,7 @@ header
 .features ul 
 {
     list-style: none;
-    text-align: left;
+    text-align: center;
 }
 
 .features h4 /* used for the spacing of the skills sections */
@@ -414,11 +424,6 @@ header
 
                                         /* ======== RESUME ======== */
 
-.resume a
-{
-    align-items: center;
-}
-
 .resume
 {
     padding-top: 30px;
@@ -435,7 +440,25 @@ header
 .resume a
 {
     align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
     font-size: 18px;
+    color: #f4a5b6;
+	padding: 10px;
+	text-decoration: none;
+	border-radius: 12px;
+    font-weight: bold;
+    background-color: transparent;
+   	margin-left: 15px;
+    border: 0;
+    text-shadow: 1px 1px grey;
+    position: center;
+}
+
+.resume a:hover
+{
+    color: red;
 }
 
                                         /* ======== CONTACT ME ======== */
@@ -457,7 +480,7 @@ header
 .contact-me
 {
     border-top: solid 40px #73605b;
-    border-bottom: solid 40px #73605b;
+    border-bottom: solid 50px #73605b;
     background: #73605b;
 }
 
@@ -513,18 +536,21 @@ header
 .scroll-to-top {
    width: 40px;
    height: 40px;
-   opacity: 1;
+   opacity: 0.6;
    position: fixed;
-   bottom: 460px;
-   right: 80px;
+   bottom: 9px;
+   right: 9px;
  }
+
+.scroll-to-top:hover
+{
+    opacity: 0.8;
+}
 
 .scroll-to-top img
 {
     height: 40px;
     width: 40px;
-    margin-top: 450px;
-    margin-left: 70px;
 }
 
 footer
