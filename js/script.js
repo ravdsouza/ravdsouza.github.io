@@ -13,21 +13,29 @@ function checkMail()
     var email = document.getElementById("e").value;
     var subj = document.getElementById("s").value;
     var msg = document.getElementById("m").value;
-    
-    if (!(name == "") && !(email == "") && !(msg == ""))
+    alert("hey im here");
+    if (name != "" && email != "" && msg != "")
         {
-            sendMail();
+            alert("also here lol");
+            sendMail(name, email, subj, msg);
         }
 }
 
-function sendMail()
-{
-    if (!(subj == ""))
+function sendMail(name, email, subj, msg)
+{    
+    alert(name);
+    alert(email);
+    alert(subj);
+    alert(msg);
+    
+    if ((subj != ""))
         {
+            alert("um");
             window.location.href = "mailto:radsouza@edu.uwaterloo.ca?subject="+subj+"&body=Name: "+name+"        Email: "+email+"        Message: "+msg;
         }
-    else
+    else 
         {
+            alert("dding dang dong");
           window.location.href = "mailto:radsouza@edu.uwaterloo.ca?subject=Message for Raveena D'Souza&body=Name: "+name+"        Email: "+email+"        Message: "+msg;
         }
 } 
@@ -58,7 +66,7 @@ faceImg.onclick = function()
 
 // ======== MODAL CONTENT ========
 
-var modalPics = document.getElementsByClassName("modal-pic"); // get images
+var modalPic = document.getElementsByClassName("pic-1"); // get images
 var modal1imgs = ["images/proj/tron-days-work-sq.jpg"];
 var modal2imgs = ["images/proj/final-project-sq.jpg", "final-project-design-sq.jpg", "images/proj/final-project-group-sq.jpg"];
 var modal3imgs = ["images/proj/wear-hacks-myo.jpg", "images/proj/wear-hacks-group.jpg", "wear-hacks-myo-2.jpg"];
@@ -67,18 +75,17 @@ var modal5imgs = ["images/proj/catalyst-3/jpg", "images/proj/catalyst-2-sq", "im
 var modal6imgs = [];
 var modal7imgs = ["images/proj/eng-ideas-clinic.jpg"];
 var modal8imgs = [];
-var modalImages = [modal1imgs, modal2imgs, modal3imgs, modal4imgs, modal5imgs, modal6imgs, modal7imgs, modal8imgs];
 var count = 0;
 
-function modalSlideshow(ind)
+function modalSlideshow(modalPic, array)
 {
-    modalPics[ind].setAttribute("src", modalImages[ind][count])
+    modalPic.setAttribute("src",  array[count])
     count++;
-    if (count >= modalImages[ind].length)
+    if (count >= array.length)
             count = 0;
 } 
 
-var two = setInterval(modalSlideshow(1), 2000);
+var two = setInterval(modalSlideshow(modalPic, modal1imgs), 2000);
 
 var modalTexts = document.getElementsByClassName("modal-text");
 
@@ -113,7 +120,7 @@ $(document).ready(function(){
       var hash = this.hash;
 
       // Using jQuery's animate() method to add smooth page scroll
-      // 700 is the # of milliseconds to links
+      // 700ms to scroll
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 700, function(){
@@ -121,7 +128,7 @@ $(document).ready(function(){
         // Add hash (#) to URL when done scrolling (default click behavior)
         //window.location.hash = hash;
       });
-    } // End if
+    }
   });
 });
 
@@ -132,3 +139,17 @@ function hideText()
 {
     hide.setAttribute("visibility", "hidden");
 }
+
+// ======== GETTING WIDTH AND HEIGHT FOR ADJUSTMENTS TO SECTIONS ========
+/*
+function getWidthHeight() {
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    document.getElementById("demo").innerHTML = "Width: " + width + "<br>Height: " + height;
+    
+    if (width < 1000)
+    {
+        document.getElementsByClassName("change").classList.remove("col-md-3");
+        document.getElementsByClassName("change").classList.add("col-md-12");
+    }
+}*/
