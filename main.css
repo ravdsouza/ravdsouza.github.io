@@ -242,8 +242,8 @@ header
 .info-abt-me p
 {
     padding-top: 40px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
     padding-top: 65px;
     color: #859fc7;
 }
@@ -256,8 +256,9 @@ header
 
 .pic-of-me img
 {
-    padding-top: 40px;
+    margin-top: 40px;
     max-height: 300px;
+    border-radius: 35px;
 }
 
 .info-abt-me
@@ -279,7 +280,7 @@ header
 
 .welcome
 {
-    border-top: solid 70px #003d66;
+    border-top: solid 40px #003d66;
     border-bottom: solid 55px #003d66;
     background: #003d66;
 }
@@ -374,7 +375,8 @@ header
     transition: all 0.5s;
     opacity: 0.7; 
     position: relative; 
-    padding-top: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
 }
 
 .project-pic img:hover
@@ -504,10 +506,10 @@ header
     font-size: 20px;
     align-content: center;
     padding-bottom: 10px;
-    padding-top: 50px;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
+    vertical-align: center;
 }
 
 .btn-warning
