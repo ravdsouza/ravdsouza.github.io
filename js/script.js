@@ -13,39 +13,30 @@ function checkMail()
     var email = document.getElementById("e").value;
     var subj = document.getElementById("s").value;
     var msg = document.getElementById("m").value;
-    alert("hey im here");
     if (name != "" && email != "" && msg != "")
         {
-            alert("also here lol");
             sendMail(name, email, subj, msg);
         }
 }
 
 function sendMail(name, email, subj, msg)
 {    
-    alert(name);
-    alert(email);
-    alert(subj);
-    alert(msg);
-    
     if ((subj != ""))
         {
-            alert("um");
             window.location.href = "mailto:radsouza@edu.uwaterloo.ca?subject="+subj+"&body=Name: "+name+"        Email: "+email+"        Message: "+msg;
         }
     else 
         {
-            alert("dding dang dong");
           window.location.href = "mailto:radsouza@edu.uwaterloo.ca?subject=Message for Raveena D'Souza&body=Name: "+name+"        Email: "+email+"        Message: "+msg;
-        }
+        } 
 } 
 
 // ======== SLIDESHOWS ========
 
-/*var faceImg = document.getElementById("face"); // get image
+var faceImg = document.getElementById("face"); // get image
 var imgArray = ["images/proj/catalyst-google.PNG", "images/proj/wear-hacks-group.jpg", "images/proj/eng-ideas-clinic.jpg", "images/me.jpg"];
 var index = 0;
-
+/*
 function slideshow()
 {
     faceImg.setAttribute("src", imgArray[index]);
@@ -54,7 +45,7 @@ function slideshow()
         index = 0;
 }
 
-var changename = setInterval(slideshow, 2000);*/
+var changename = setInterval(slideshow, 1000);*/
 
 /* FOLLOWING CODE CAN BE USED TO STOP THE INTERVAL WITH A CLICK 
 faceImg.onclick = function()
@@ -66,26 +57,59 @@ faceImg.onclick = function()
 
 // ======== MODAL CONTENT ========
 
-var modalPic = document.getElementsByClassName("pic-1"); // get images
-var modal1imgs = ["images/proj/tron-days-work-sq.jpg"];
-var modal2imgs = ["images/proj/final-project-sq.jpg", "final-project-design-sq.jpg", "images/proj/final-project-group-sq.jpg"];
-var modal3imgs = ["images/proj/wear-hacks-myo.jpg", "images/proj/wear-hacks-group.jpg", "wear-hacks-myo-2.jpg"];
+var img1 = document.getElementById("pic-1"); // get images
+var img2 = document.getElementById("pic-2"); // get images
+var img3 = document.getElementById("pic-3"); // get images
+var modal1imgs = ["images/proj/final-project-sq.jpg", "images/proj/tron-days-work-sq.jpg"];
+var modal2imgs = ["images/proj/final-project-sq.jpg", "images/proj/final-project-design-sq.jpg", "images/proj/final-project-group-sq.jpg"];
+var modal3imgs = ["images/proj/wear-hacks-myo.jpg", "images/proj/wear-hacks-group.jpg", "images/proj/wear-hacks-myo-2.jpg"];
 var modal4imgs = [];
 var modal5imgs = ["images/proj/catalyst-3/jpg", "images/proj/catalyst-2-sq", "images/proj/catalyst-google.jpg"];
 var modal6imgs = [];
 var modal7imgs = ["images/proj/eng-ideas-clinic.jpg"];
 var modal8imgs = [];
 var count = 0;
+var imageClicks = document.getElementsByClassName("startSlideshow");
 
-function modalSlideshow(modalPic, array)
+function modalSlideshow(img, arr)
 {
-    modalPic.setAttribute("src",  array[count])
+    img.setAttribute("src",  arr[count]);
     count++;
-    if (count >= array.length)
+    if (count >= arr.length)
             count = 0;
 } 
+var changename = setInterval(modalSlideshow, 1000, img1, modal1imgs);
 
-var two = setInterval(modalSlideshow(modalPic, modal1imgs), 2000);
+for (l = 0; l < 3; l++)
+{
+    imageClicks[0].onclick = function(){
+        clearInterval(changename);
+        changename = setInterval(modalSlideshow, 1000, img1, modal1imgs);
+    };
+    clearInterval(changename);
+    imageClicks[1].onclick = function(){
+        clearInterval(changename);
+        changename = setInterval(modalSlideshow, 1000, img2, modal2imgs);
+    };
+    clearInterval(changename);
+    imageClicks[2].onclick = function(){
+        clearInterval(changename);
+        changename = setInterval(modalSlideshow, 1000, img3, modal3imgs);
+    };
+    clearInterval(changename);
+}
+
+/*
+function modalSlideshow2()
+{
+    img2.setAttribute("src",  modal2imgs[count]);
+    count2++;
+    if (count2 >= modal2imgs.length)
+            count2 = 0;
+} 
+*/
+//var changename1 = setInterval(modalSlideshow, 1000, img1, modal1imgs);
+//var changename2 = setInterval(modalSlideshow2, 2000);
 
 var modalTexts = document.getElementsByClassName("modal-text");
 
