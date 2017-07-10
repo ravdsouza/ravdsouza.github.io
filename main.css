@@ -27,6 +27,19 @@ body
     src: url("fonts/Autumn in November.ttf");
 }
 
+@font-face
+{
+    font-family: "AlwaysInMyHeart";
+    src: url("fonts/Always In My Heart.ttf");
+}
+
+@font-face
+{
+    font-family: "Alpha54";
+    src: url("fonts/Alpha54.ttf");
+}
+
+
 .subsec
 {
     font-family: 'AutumnInNovember';
@@ -133,9 +146,9 @@ p::-moz-selection, h3::-moz-selection, h1::-moz-selection, h2::-moz-selection, i
 .name
 {
     font-family: 'AutumnInNovember';
-    height: 10vh;
+    height: 11vh;
     padding-left: 0;
-    font-size: 10vh;
+    font-size: 11vh;
     padding-right: 0;
     padding-top: 100px;;
     padding-bottom: 40px;
@@ -441,10 +454,6 @@ header
 
 .resume a
 {
-    align-content: center;
-    align-items: center;
-    align-self: center;
-    text-align: center;
     font-size: 18px;
     color: #f4a5b6;
 	padding: 10px;
@@ -452,10 +461,10 @@ header
 	border-radius: 12px;
     font-weight: bold;
     background-color: transparent;
-   	margin-left: 15px;
     border: 0;
     text-shadow: 1px 1px grey;
-    position: center;
+    display: inline;
+    display: block;
 }
 
 .resume a:hover
