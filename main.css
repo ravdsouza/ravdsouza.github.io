@@ -254,29 +254,24 @@ header
 
 .info-abt-me p
 {
-    padding-top: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 65px;
+    padding-top: 30px;
+    padding-left: 20%;
+    padding-right: 20%;;
     color: #859fc7;
-}
-
-.alignment
-{
     text-align: justify;
     padding-bottom: 20px;
 }
 
 .pic-of-me img
 {
-    margin-top: 40px;
+    margin-top: 50px;
     max-height: 300px;
-    border-radius: 35px;
+    border-radius: 50%;
 }
 
 .info-abt-me
 {
-    padding-top: 15px;
+    padding-top: 0;
 }
 
 .one, .two, .three
@@ -293,7 +288,7 @@ header
 
 .welcome
 {
-    border-top: solid 40px #003d66;
+    border-top: solid 20px #003d66;
     border-bottom: solid 55px #003d66;
     background: #003d66;
 }
@@ -321,7 +316,6 @@ header
 .features ul
 {
     list-style: none;
-    text-align: center;
 }
 
 .features h4 /* used for the spacing of the skills sections */
@@ -350,6 +344,14 @@ header
 .shadow
 {
     text-shadow: 1px 1px grey;
+}
+
+.bullets
+{
+    padding-top: 25px;
+    text-align: center;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
                                         /* ======== PROJECTS ======== */
