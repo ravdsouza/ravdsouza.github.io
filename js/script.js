@@ -61,8 +61,8 @@ var img1 = document.getElementById("pic-1"); // get images
 var img2 = document.getElementById("pic-2"); // get images
 var img3 = document.getElementById("pic-3"); // get images
 var modal1imgs = ["images/proj/final-project-sq.jpg", "images/proj/tron-days-work-sq.jpg"];
-var modal2imgs = ["images/proj/final-project-sq.jpg", "images/proj/final-project-design-sq.jpg", "images/proj/final-project-group-sq.jpg"];
-var modal3imgs = ["images/proj/wear-hacks-myo.jpg", "images/proj/wear-hacks-group.jpg", "images/proj/wear-hacks-myo-2.jpg"];
+var modal2imgs = ["images/proj/final-project-design-sq.jpg", "images/proj/final-project-group-sq.jpg", "images/proj/final-project-sq.jpg"];
+var modal3imgs = ["images/proj/wear-hacks-group.jpg", "images/proj/wear-hacks-myo-2.jpg", "images/proj/wear-hacks-myo.jpg"];
 var modal4imgs = [];
 var modal5imgs = ["images/proj/catalyst-3/jpg", "images/proj/catalyst-2-sq", "images/proj/catalyst-google.jpg"];
 var modal6imgs = [];
@@ -78,23 +78,24 @@ function modalSlideshow(img, arr)
     if (count >= arr.length)
             count = 0;
 } 
+
 var changename = setInterval(modalSlideshow, 1000, img1, modal1imgs);
 
 for (l = 0; l < 3; l++)
 {
     imageClicks[0].onclick = function(){
         clearInterval(changename);
-        changename = setInterval(modalSlideshow, 1000, img1, modal1imgs);
+        changename = setInterval(modalSlideshow, 2500, img1, modal1imgs);
     };
     clearInterval(changename);
     imageClicks[1].onclick = function(){
         clearInterval(changename);
-        changename = setInterval(modalSlideshow, 1000, img2, modal2imgs);
+        changename = setInterval(modalSlideshow, 2500, img2, modal2imgs);
     };
     clearInterval(changename);
     imageClicks[2].onclick = function(){
         clearInterval(changename);
-        changename = setInterval(modalSlideshow, 1000, img3, modal3imgs);
+        changename = setInterval(modalSlideshow, 2500, img3, modal3imgs);
     };
     clearInterval(changename);
 }
