@@ -161,8 +161,8 @@ p::-moz-selection, h3::-moz-selection, h1::-moz-selection, h2::-moz-selection, i
 {
     padding-top: 10px;
     font-size: 4vh;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 header
@@ -257,16 +257,18 @@ header
     padding-top: 30px;
     padding-left: 20%;
     padding-right: 20%;;
-    color: #859fc7;
-    text-align: justify;
+    color: #d9d9d9;
+    text-align: center;
     padding-bottom: 20px;
+    font-size: 2.45vh;
 }
 
 .pic-of-me img
 {
-    margin-top: 50px;
+    margin-top: 30px;
     max-height: 300px;
     border-radius: 50%;
+    max-width: 40%;
 }
 
 .info-abt-me
@@ -288,22 +290,24 @@ header
 
 .welcome
 {
-    border-top: solid 20px #003d66;
-    border-bottom: solid 55px #003d66;
-    background: #003d66;
+    border-top: solid 20px #004d80;
+    border-bottom: solid 55px #004d80;
+    background: #004d80;
 }
 
                                         /* ======== SKILLS ======== */
 
 .features
 {
-    background: #b3e0ff;
+    background: #b3d9ff;
     padding-bottom: 20px;
+    background-image: url(images/bkgd/subtle-grey.jpg);
+    background-blend-mode: darken;
 }
 
 .features h3
 {
-    border-top: solid 40px #b3e0ff;
+    border-top: solid 40px #b3d9ff;
     border-bottom: 30px;
 }
 
@@ -396,14 +400,14 @@ header
 
 .project-pic img:hover
 {
-    transform: scale(1.2); /* for zoom in effect*/
+    transform: scale(1.15); /* for zoom in effect*/
     opacity: 1.0;
 }
 
 .project
 {
     padding-top: 40px;
-    background: #003d66;
+    background: #004d80;
     padding-bottom: 50px;
     padding-bottom: 80px;
 }
@@ -439,6 +443,18 @@ header
     max-height: 400px;
     border-radius: 10px;
 }
+/*
+.overlap-img
+{
+    position: relative;
+}
+
+.overlap-txt
+{
+    position: sticky;
+    top: 15px;
+    left: 15px;
+}*/
 
                                         /* ======== RESUME ======== */
 
@@ -446,7 +462,7 @@ header
 {
     padding-top: 30px;
     padding-bottom: 20px;
-    background: #b3e0ff;
+    background: #b3d9ff;
 }
 
 .resume-thanks
@@ -492,9 +508,9 @@ header
 
 .contact-me
 {
-    border-top: solid 40px #003d66;
-    border-bottom: solid 50px #003d66;
-    background: #003d66;
+    border-top: solid 40px #004d80;
+    border-bottom: solid 50px #004d80;
+    background: #004d80;
 }
 
 .social-media-icons i
@@ -580,6 +596,13 @@ footer
     background-color: #b2c6e6;
 }
 
-                                        /* ======== EXTRA CSS ======== 
+                                        /* ======== EXTRA CSS ======== */
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
 
 /* Copyright © 2017 Raveena D'Souza */
