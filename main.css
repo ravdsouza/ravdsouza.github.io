@@ -39,7 +39,6 @@ body
     src: url("fonts/Alpha54.ttf");
 }
 
-
 .subsec
 {
     font-family: 'AutumnInNovember';
@@ -52,12 +51,12 @@ body
 
 .features h3, .resume h3
 {
-    color: #2d4262;
+    color: #333333;
 }
 
-.welcome h3, .proj h3
+.welcome h3, .project h3, .contact-me h3
 {
-    color: #859fc7;
+    color: #d9d9d9;
 }
 
 h1, h2
@@ -72,13 +71,26 @@ h1, h2
 	text-decoration: none;
 	border-radius: 12px;
     font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
     background-color: transparent;
-   	margin-left: 15px;
     border: 0;
     text-shadow: 1px 1px grey;
     align-content: center;
     display: inline;
 }
+/*
+.button 
+{
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+	text-decoration: none;
+    border-radius: 2px;
+    font-weight: bold;
+    border: 2px solid black;
+    align-content: center;
+}/*/
 
 .btn:visited, .btn:active
 {
@@ -214,8 +226,8 @@ header
 
 .nav li a:hover
 {
-    transition: all 0.2s ease-in;
-    color: #007acc;
+    transition: all 0.15s ease-in;
+    color: #b3e0ff;
     background-color: transparent;
     text-shadow: 1px 1px #000000;
 }
@@ -246,7 +258,7 @@ header
 
 .description a
 {
-    color: white;
+    color: #d9d9d9;
     text-decoration: none;
 }
 
@@ -291,7 +303,7 @@ header
 .welcome
 {
     border-top: solid 20px #004d80;
-    border-bottom: solid 55px #004d80;
+    border-bottom: solid 20px #004d80;
     background: #004d80;
 }
 
@@ -300,9 +312,9 @@ header
 .features
 {
     background: #b3d9ff;
-    padding-bottom: 20px;
     background-image: url(images/bkgd/subtle-grey.jpg);
     background-blend-mode: darken;
+    border-bottom: solid 40px #b3d9ff;
 }
 
 .features h3
@@ -327,6 +339,7 @@ header
     margin-top: 10px;
     padding-bottom: 0;
     margin-bottom: 0;
+    color: #333333;
 }
 
 .move
@@ -377,15 +390,16 @@ header
     display: block;
     width: 25%;
     float: left;
+    max-width: 350px;
 }
 
-.project-pic
+.project-pics
 {
     margin: 10px;
     align-content: center;
 }
 
-.project-pic img
+.project-pic img, .overlay
 {
     width: 80%;
     height: 80%;
@@ -409,7 +423,6 @@ header
     padding-top: 40px;
     background: #004d80;
     padding-bottom: 50px;
-    padding-bottom: 80px;
 }
 
 .clearfix
@@ -443,18 +456,6 @@ header
     max-height: 400px;
     border-radius: 10px;
 }
-/*
-.overlap-img
-{
-    position: relative;
-}
-
-.overlap-txt
-{
-    position: sticky;
-    top: 15px;
-    left: 15px;
-}*/
 
                                         /* ======== RESUME ======== */
 
@@ -474,20 +475,20 @@ header
 .resume a
 {
     font-size: 18px;
-    color: #f4a5b6;
+    color: #4b5c9b;
 	padding: 10px;
 	text-decoration: none;
 	border-radius: 12px;
     font-weight: bold;
     background-color: transparent;
     border: 0;
-    text-shadow: 1px 1px grey;
+    text-shadow: 1px 1px #484848;
     left: 50%;
 }
 
 .resume a:hover
 {
-    color: red;
+    color: #3a4878;
 }
 
                                         /* ======== CONTACT ME ======== */
@@ -530,7 +531,7 @@ header
 
 .contact-msg p
 {
-    color: #9fb8e0;
+    color: #d9d9d9;
     font-size: 20px;
     align-content: center;
     padding-bottom: 10px;
@@ -592,7 +593,7 @@ footer
 .footer-msg
 {
     margin: 0;
-    color: black;
+    color: #1a1a1a;
     background-color: #b2c6e6;
 }
 
@@ -603,6 +604,44 @@ a.anchor {
     position: relative;
     top: -250px;
     visibility: hidden;
+}
+
+.box
+{
+    position: relative;
+    max-width: 350px;
+}
+
+.image
+{
+    height: auto;
+}
+
+.overlay
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: aqua;
+    height: 0%;
+    transition: 1s ease;
+    overflow: hidden;
+}
+
+.box:hover .overlay
+{
+    height: 50%;
+}
+
+.text
+{
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    align-items: center;
 }
 
 /* Copyright © 2017 Raveena D'Souza */
