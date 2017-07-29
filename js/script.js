@@ -69,15 +69,18 @@ var modal6imgs = [];
 var modal7imgs = ["images/proj/eng-ideas-clinic.jpg"];
 var modal8imgs = [];
 var count = 0;
-var imageClicks = document.getElementsByClassName("startSlideshow");
-
+//var imageClicks = document.getElementsByClassName("startSlideshow");
+/*
 function modalSlideshow(img, arr)
 {
+    img.fadeIn('400');
     img.setAttribute("src",  arr[count]);
     count++;
     if (count >= arr.length)
             count = 0;
 } 
+
+
 
 var changename = setInterval(modalSlideshow, 1000, img1, modal1imgs);
 
@@ -92,6 +95,7 @@ for (l = 0; l < 3; l++)
         clearInterval(changename);
         changename = setInterval(modalSlideshow, 2500, img2, modal2imgs);
     };
+    
     clearInterval(changename);
     imageClicks[2].onclick = function(){
         clearInterval(changename);
@@ -99,7 +103,7 @@ for (l = 0; l < 3; l++)
     };
     clearInterval(changename);
 }
-
+*/
 /*
 function modalSlideshow2()
 {
@@ -122,7 +126,7 @@ modalTexts[1].innerHTML = "<br>The MTE 100 (Mechatronics Engineering)/GENE 121 (
 modalTexts[2].innerHTML = "<br>WearHacks 2017 was a hacakthon held in Kitchener. I, along with three other friends, designed a productvity app to be used with a VR headset, and controlled by the Thalmic Labs' Myo Gesture Control Armband. This app featured sections such as a calendar, to-do list, user health, etc. It was designed in virtual reality that could then be transitioned into augmented reality for a more realistic and useful experience.<br><br>This app was developed with Unity and C#, and HTML/CSS for our website promoting the app.";
 // kumon math and reading
 modalTexts[3].innerHTML = "<br>Kumon is a math and reading academic enrichment program for students from preschool to grade 12 to supplement material taught in class. I was an early-learner tutor and was responsible for teaching students up to grade 3 concepts about math and reading. My other responsibilites include marking their classwork and homework, supervising the other students, and guiding them towards the answer if they had questions.<br><br>This job helped me gain responsiblity, develop <strong>time management skills</strong>, and improve my math skills.";
-modalTexts[4].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
+modalTexts[4].innerHTML = "The Grade 11 Girls Catalyst Conference was a 3 day overnight event where 50 delegates were chosen to attend and participate in various workshops and projects. There were various workshops covered where we gained many hands-on technical skills such as soldering, using machine shop tools to create a keychain, and using Arduino to create different LED colours and displays.";
 modalTexts[5].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
 modalTexts[6].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
 modalTexts[7].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
@@ -144,19 +148,34 @@ $(document).ready(function(){
       // Store hash
       var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // 700ms to scroll
+      // Using jQuery's animate() method to add smooth page scroll for 700ms
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 700, function(){
-   
+    
         // Add hash (#) to URL when done scrolling (default click behavior)
         //window.location.hash = hash;
       });
     }
   });
+    
+     //   $("#face").fadeOut();
+    // jQuery slideshows
+    $('#img-click').on('click', setInterval(slideshows, 2000));
+    
+    function slideshows()
+    {
+        $('#pic-1').delay(2000).fadeOut(200);
+        $('#pic-1').attr("src", modal1imgs[1]);
+        $('#pic-1').fadeIn(200);
+        $('#pic-1').attr("src", modal1imgs[0]);
+        $('#pic-1').delay(2000).fadeOut(200);
+        $('#pic-1').attr("src", modal1imgs[1]);
+        $('#pic-1').fadeIn(200);
+    }
 });
 
+// use fadeout jequery
 
 // ======== TEXT OVERLAP ON IMAGE ========
 hide = document.getElementsByClassName("hide");
