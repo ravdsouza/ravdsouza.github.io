@@ -1,8 +1,6 @@
 /*
-
 JavaScript for raveenadsouza.com
 Copyright © 2017 Raveena D'Souza
-
 */
 
 // ======== SENDING FORM EMAIL WITH EMAIL CLIENT ========
@@ -44,7 +42,6 @@ function slideshow()
     if (index >= imgArray.length)
         index = 0;
 }
-
 var changename = setInterval(slideshow, 1000);*/
 
 /* FOLLOWING CODE CAN BE USED TO STOP THE INTERVAL WITH A CLICK 
@@ -52,7 +49,6 @@ faceImg.onclick = function()
 {
     clearInterval(changename); clearTimeout also exists
 };
-
 */
 
 // ======== MODAL CONTENT ========
@@ -79,11 +75,7 @@ function modalSlideshow(img, arr)
     if (count >= arr.length)
             count = 0;
 } 
-
-
-
 var changename = setInterval(modalSlideshow, 1000, img1, modal1imgs);
-
 for (l = 0; l < 3; l++)
 {
     imageClicks[0].onclick = function(){
@@ -117,7 +109,7 @@ function modalSlideshow2()
 //var changename2 = setInterval(modalSlideshow2, 2000);
 
 var modalTexts = document.getElementsByClassName("modal-text");
-
+/*
 // tron days
 modalTexts[0].innerHTML = "<br>Tron Days was a two-day event held by during our first term of university where students, in teams of four, applied several skills developed througout the term in various problems. These were designed to integrate our five courses (calculus, linear algenra, digital computation (c++), mechatronics engineering (concepts course), and chemistry. The purpose of these problems were to solve open-ended questions, as seen in the real world, and use our assumptions, engineering judgement, and previous knowledge to come up with an appropriate solution.<br><br><indent>Prior to these two days, we designed a logo that was to represent us during the event using AutoCAD. This was for the development of our CAD skills and helped us collaborate and share ideas to come up with a good design. During the event, we had several problems centered around the movie <i>The Martian</i> where we disproved the probabilty that growing potatoes in that environment was possible, or researching appropriate materials to cover a rip in a high pressure difference wall. These activites helped me develop my <strong>problem solving</strong> skills, and to <strong>collaborate</strong> with my teammates to create a successful solution.";
 //final project
@@ -131,7 +123,7 @@ modalTexts[5].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
 modalTexts[6].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
 modalTexts[7].innerHTML = "PARAGRAPH 1<br><br>paragraph 2";
 
-
+*/
 // ======== SMOOTH SCROLLING ========
 
 // done w/ jQuery using code from w3schools.com (w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll with some changes made)
@@ -150,7 +142,7 @@ $(document).ready(function(){
 
       // Using jQuery's animate() method to add smooth page scroll for 700ms
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top-42
       }, 700, function(){
     
         // Add hash (#) to URL when done scrolling (default click behavior)
@@ -187,13 +179,7 @@ function hideText()
 // ======== GETTING WIDTH AND HEIGHT FOR ADJUSTMENTS TO SECTIONS ========
 /*
 function getWidthHeight() {
-    var width = window.innerWidth;
-    var height = window.innerHeight;
-    document.getElementById("demo").innerHTML = "Width: " + width + "<br>Height: " + height;
-    
-    if (width < 1000)
-    {
-        document.getElementsByClassName("change").classList.remove("col-md-3");
-        document.getElementsByClassName("change").classList.add("col-md-12");
-    }
+    var wtf = document.getElementById("demo");
+    var h = wtf.offsetHeight;
+    document.getElementById("demo").innerHTML = "<br>Height: " + h;
 }*/
