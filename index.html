@@ -50,7 +50,7 @@
                 <li><a class="btn btn-three" href="#skills">SKILLS</a>
                 <li><a class="btn btn-four" href="#proj">PROJECTS</a>
                 <li><a class="btn btn-five" href="#resume">RÉSUMÉ</a>
-                <li><a class="btn btn-six" href="#contact">CONTACT ME</a>
+                <li><a class="btn btn-six" href="#contact">CONTACT</a>
               </ul>
             </section>
           </div> <!-- END NAVIGATION -->
@@ -113,7 +113,9 @@
                 <div class="sec">
                 <div class="col-md-3 change">
                     <div class="move">
-                        <i class="fa fa-code shadow"></i>
+                        <div class="big-icon">
+                            <i class="fa fa-code shadow"></i>
+                        </div>
                         <h4 class="shadow"><strong>SOFTWARE</strong></h4>
                     </div>
                     <div class="bullets">
@@ -122,25 +124,28 @@
                             <div class="col-md-6">
                                 <li>Python</li>
                                 <li>Java</li>
-                                <li>C++/C</li>
+                                <li>C++/C/C#</li>
                                 <li>PLCs</li>
                                 <li>HTML, CSS, JavaScript</li>
                             </div>
                             <div class="col-md-6">
                                 <li>Android developement</li>
-                                <li>Robot C</li>
-                                <li>Unity/C#</li>
+                                <li>ROBOTC</li>
+                                <li>Unity</li>
                                 <li>SQL</li>
                                 <li>MATLAB</li>
                             </div>
                         </ul>
                     </div>
                         </div>
+                    
                 
                 </div>
                 <div class="col-md-3 change">
                     <div class="move">
-                        <i class="fa fa-cog shadow"></i>
+                        <div class="big-icon">
+                            <i class="fa fa-cog shadow"></i>
+                        </div>
                         <h4 class="shadow"><strong>MECHANICAL</strong></h4>
                     </div>
                     <div class="bullets">
@@ -160,7 +165,9 @@
           <div class="sec">
                 <div class="col-md-3 change">
                     <div class="move">
-                        <i class="fa fa-heartbeat shadow"></i> 
+                        <div class="big-icon">
+                            <i class="fa fa-heartbeat shadow"></i> 
+                        </div>
                         <h4 class="shadow"><strong>BIOMEDICAL</strong></h4>
                     </div>
                     <div class="bullets">
@@ -175,7 +182,9 @@
                 </div>
                 <div class="col-md-3 change">
                     <div class="move">
-                        <i class="fa fa-users shadow"></i>
+                        <div class="big-icon">
+                            <i class="fa fa-users shadow"></i>
+                        </div>
                         <h4 class="shadow"><strong>LEADERSHIP</strong></h4>
                     </div>
                     <div class="bullets">
@@ -207,10 +216,7 @@
                 <li>
                     <!-- image modal button -->
               <figure class="project-pic text-center">
-                  <div class="box">
-                    <img type="button" data-toggle="modal" data-target="#myModal1" src="images/proj/tron-days-work-sq.jpg" alt="Tron Days" class="startSlideshow image" id="img-click"> <!-- WHY is the class startslidehow figure this out -->
-                  <!--<div class="overlay"><div class="text">Hello world</div></div>-->
-                    </div>
+                  <img type="button" src="images/proj/factory-1.jpg" data-toggle="modal" data-target="#myModal1" alt="Industry 4.0 Lab">
                 </figure>
 
               <!-- modal -->
@@ -221,20 +227,14 @@
                   <div class="modal-content the-modal">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title text-center">TRON DAYS</h4>
+                      <h4 class="modal-title text-center">INDUSTRY 4.0 LAB</h4>
                     </div>
                     <div class="modal-body">
                         <p>
-                            <img src="images/proj/tron-days-work-sq.jpg" class="modal-pic center-block" id="pic-1" alt="Tron Days Slideshow">
-                            <p class="modal-text"><br>Tron Days was a two-day event held by during our first term of university where students, in teams of four, applied several skills developed througout the term in various problems. These were designed to integrate our five courses (calculus, linear algenra, digital computation (c++), mechatronics engineering (concepts course), and chemistry. The purpose of these problems were to solve open-ended questions, as seen in the real world, and use our assumptions, engineering judgement, and previous knowledge to come up with an appropriate solution.<br><br><indent>Prior to these two days, we designed a logo that was to represent us during the event using AutoCAD. This was for the development of our CAD skills and helped us collaborate and share ideas to come up with a good design. During the event, we had several problems centered around the movie <i>The Martian</i> where we disproved the probabilty that growing potatoes in that environment was possible, or researching appropriate materials to cover a rip in a high pressure difference wall. These activites helped me develop my <strong>problem solving</strong> skills, and to <strong>collaborate</strong> with my teammates to create a successful solution.</p>
+                            <img src="images/proj/factory-1.JPG" class="modal-pic center-block">
+                            <p class="modal-text"><br>The Industry 4.0 Lab is a lab used in Management Engineering. It is designed as a factory and automated from start to finish with the use of PLCs and C# software. It simulates a real factory line by using RFID chips as the objects created and introduces variability by altering the code used to fetch RDIF information.<br><br>In this lab, my role is to develop and debug PLC and C# code to improve the factory's automation and remove bugs for a smoother execution.</p>
                         </p>
-                      
                     </div>
-                      <!-- MODAL FOOTERS
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-one" data-dismiss="modal">close</button>
-                        </div>
-                      -->
                   </div>
 
                 </div>
@@ -243,7 +243,7 @@
                 <li>
                     <!-- image modal button -->
               <figure class="project-pic text-center">
-                  <img type="button" onmouseover="hideText()"; src="images/proj/final-project-sq.jpg" data-toggle="modal" data-target="#myModal2" alt="MTE 100/GENE 121 final project" class="startSlideshow">
+                    <img type="button" src="images/proj/eng-ideas-clinic.jpg" data-toggle="modal" data-target="#myModal2" alt="Engineering Ideas Clinic">
                 </figure>
 
               <!-- modal -->
@@ -254,21 +254,19 @@
                   <div class="modal-content the-modal">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title text-center">FINAL PROJECT</h4>
+                      <h4 class="modal-title text-center">ENGINEERING IDEAS CLINIC</h4>
                     </div>
                     <div class="modal-body">
                         <p>
-                            <img src="images/proj/final-project-sq.jpg" class="modal-pic center-block" id="pic-2-1">
-                            <img src="images/proj/final-project-design-sq.jpg" class="modal-pic center-block" id="pic-2-2">
-                            <img src="images/proj/final-project-group-sq.jpg" class="modal-pic center-block" id="pic-2-3">
-                            <p class="modal-text"><br>The MTE 100 (Mechatronics Engineering)/GENE 121 (Digital Computation) final project was an integrated project spanning two months completed in a group of four students. The assignment was to create and program a robot that would perform a task. This was done using Lego NXT and RobotC, a C-based language. My team decided to create a robot that would act as an ATM. It was programmed to collect, scan, process, count, and sort money for the user. This was done using several sensors, such as colour sensors, en<br>WearHacks 2017 was a hacakthon held in Kitchener. I, along with three other friends, designed a productvity app to be used with a VR headset, and controlled by the Thalmic Labs' Myo Gesture Control Armband. This app featured sections such as a calendar, to-do list, user health, etc. It was designed in virtual reality that could then be transitioned into augmented reality for a more realistic and useful experience.<br><br>This app was developed with Unity and C#, and HTML/CSS for our website promoting the app.coders, ultrasonic sensors, etc.<br><br>This project had several deliverables throughout the timeline that allowed us to stay organized and focus on finishing the assignment in the allotted time. We used several project management techniques, such as the critial path method, gantt charts, and Excel spreadsheets to track our progress and ensure that we were moving at a good pace. We developed teamworking skills by collaborating our ideas to create the design and communicating with each other about our work so that our code would integrate well in the end. Our last deliverable for this assignment was a full report describing what our robot was and how it was designed. Thie greatly improved our report-writing skills and helped us stay more organised. We ended up finishing on track, and developed many vital skills along the way.</p>
+                            <img src="images/proj/eng-ideas-clinic.jpg" class="modal-pic center-block">
+                            <p class="modal-text"></p>
                         </p>
                     </div>
                   </div>
 
                 </div>
               </div>
-                </li>
+                    </li>
                 <li>
                     <!-- image modal button -->
               <figure class="project-pic text-center">
@@ -296,14 +294,79 @@
                 </div>
               </div>
                     </li>
-                <li>
+                    <li>
                     <!-- image modal button -->
-                <figure class="project-pic text-center">
-                    <img type="button" src="images/proj/kumon-main.jpg" data-toggle="modal" data-target="#myModal4" alt="Kumon Math and Reading">
+              <figure class="project-pic text-center">
+                  <img type="button" src="images/proj/final-project-sq.jpg" data-toggle="modal" data-target="#myModal4" alt="MTE 100/GENE 121 final project" class="startSlideshow">
                 </figure>
 
               <!-- modal -->
               <div class="modal fade" id="myModal4" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- modal content-->
+                  <div class="modal-content the-modal">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title text-center">FINAL PROJECT</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <img src="images/proj/final-project-sq.jpg" class="modal-pic center-block" id="pic-2-1">
+                            <img src="images/proj/final-project-design-sq.jpg" class="modal-pic center-block" id="pic-2-2">
+                            <img src="images/proj/final-project-group-sq.jpg" class="modal-pic center-block" id="pic-2-3">
+                            <p class="modal-text"><br>The MTE 100 (Mechatronics Engineering)/GENE 121 (Digital Computation) final project was an integrated project spanning two months completed in a group of four students. The assignment was to create and program a robot that would perform a task. This was done using Lego NXT and RobotC, a C-based language. My team decided to create a robot that would act as an ATM. It was programmed to collect, scan, process, count, and sort money for the user. This was done using several sensors, such as colour sensors, en<br>WearHacks 2017 was a hacakthon held in Kitchener. I, along with three other friends, designed a productvity app to be used with a VR headset, and controlled by the Thalmic Labs' Myo Gesture Control Armband. This app featured sections such as a calendar, to-do list, user health, etc. It was designed in virtual reality that could then be transitioned into augmented reality for a more realistic and useful experience.<br><br>This app was developed with Unity and C#, and HTML/CSS for our website promoting the app.coders, ultrasonic sensors, etc.<br><br>This project had several deliverables throughout the timeline that allowed us to stay organized and focus on finishing the assignment in the allotted time. We used several project management techniques, such as the critial path method, gantt charts, and Excel spreadsheets to track our progress and ensure that we were moving at a good pace. We developed teamworking skills by collaborating our ideas to create the design and communicating with each other about our work so that our code would integrate well in the end. Our last deliverable for this assignment was a full report describing what our robot was and how it was designed. Thie greatly improved our report-writing skills and helped us stay more organised. We ended up finishing on track, and developed many vital skills along the way.</p>
+                        </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+                </li>
+                    <li>
+                    <!-- image modal button -->
+              <figure class="project-pic text-center">
+                  <div class="box">
+                    <img type="button" data-toggle="modal" data-target="#myModal5" src="images/proj/tron-days-work-sq.jpg" alt="Tron Days" class="startSlideshow image" id="img-click"> <!-- WHY is the class startslidehow figure this out -->
+                  <!--<div class="overlay"><div class="text">Hello world</div></div>-->
+                    </div>
+                </figure>
+
+              <!-- modal -->
+              <div class="modal fade" id="myModal5" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- modal content-->
+                  <div class="modal-content the-modal">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title text-center">TRON DAYS</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <img src="images/proj/tron-days-work-sq.jpg" class="modal-pic center-block" id="pic-1" alt="Tron Days Slideshow">
+                            <p class="modal-text"><br>Tron Days was a two-day event held by during our first term of university where students, in teams of four, applied several skills developed througout the term in various problems. These were designed to integrate our five courses (calculus, linear algenra, digital computation (c++), mechatronics engineering (concepts course), and chemistry. The purpose of these problems were to solve open-ended questions, as seen in the real world, and use our assumptions, engineering judgement, and previous knowledge to come up with an appropriate solution.<br><br><indent>Prior to these two days, we designed a logo that was to represent us during the event using AutoCAD. This was for the development of our CAD skills and helped us collaborate and share ideas to come up with a good design. During the event, we had several problems centered around the movie <i>The Martian</i> where we disproved the probabilty that growing potatoes in that environment was possible, or researching appropriate materials to cover a rip in a high pressure difference wall. These activites helped me develop my <strong>problem solving</strong> skills, and to <strong>collaborate</strong> with my teammates to create a successful solution.</p>
+                        </p>
+                      
+                    </div>
+                      <!-- MODAL FOOTERS
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-one" data-dismiss="modal">close</button>
+                        </div>
+                      -->
+                  </div>
+
+                </div>
+              </div>
+                </li>
+                <li>
+                    <!-- image modal button -->
+                <figure class="project-pic text-center">
+                    <img type="button" src="images/proj/kumon-main.jpg" data-toggle="modal" data-target="#myModal6" alt="Kumon Math and Reading">
+                </figure>
+
+              <!-- modal -->
+              <div class="modal fade" id="myModal6" role="dialog">
                 <div class="modal-dialog">
 
                   <!-- modal content-->
@@ -327,11 +390,11 @@
                 <li>
                     <!-- image modal button -->
               <figure class="project-pic text-center">
-                    <img type="button" src="images/proj/catalyst-3.jpg" data-toggle="modal" data-target="#myModal5" alt="Catalyst Girls Conference">
+                    <img type="button" src="images/proj/catalyst-3.jpg" data-toggle="modal" data-target="#myModal7" alt="Catalyst Girls Conference">
                 </figure>
 
               <!-- modal -->
-              <div class="modal fade" id="myModal5" role="dialog">
+              <div class="modal fade" id="myModal7" role="dialog">
                 <div class="modal-dialog">
 
                   <!-- modal content-->
@@ -354,18 +417,18 @@
                 <li>
                     <!-- image modal button -->
               <figure class="project-pic text-center">
-                    <img type="button" src="images/proj/watonomous.png" data-toggle="modal" data-target="#myModal6" alt="Summer Car Project">
+                    <img type="button" src="images/proj/watonomous.png" data-toggle="modal" data-target="#myModal8" alt="WATonomous">
                 </figure>
 
               <!-- modal -->
-              <div class="modal fade" id="myModal6" role="dialog">
+              <div class="modal fade" id="myModal8" role="dialog">
                 <div class="modal-dialog">
 
                   <!-- modal content-->
                   <div class="modal-content the-modal">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title text-center">SUMMER CAR PROJECT</h4>
+                      <h4 class="modal-title text-center">WATonomous</h4>
                     </div>
                     <div class="modal-body">
                         <p>
@@ -378,64 +441,11 @@
                 </div>
               </div>
                     </li>
-                <li>
-                    <!-- image modal button -->
-              <figure class="project-pic text-center">
-                    <img type="button" src="images/proj/eng-ideas-clinic.jpg" data-toggle="modal" data-target="#myModal7" alt="Engineering Ideas Clinic">
-                </figure>
-
-              <!-- modal -->
-              <div class="modal fade" id="myModal7" role="dialog">
-                <div class="modal-dialog">
-
-                  <!-- modal content-->
-                  <div class="modal-content the-modal">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title text-center">ENGINEERING IDEAS CLINIC</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img src="images/proj/eng-ideas-clinic.jpg" class="modal-pic center-block">
-                            <p class="modal-text"></p>
-                        </p>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-                    </li>
-                <li>
-                    <!-- image modal button -->
-              <figure class="project-pic text-center">
-                    <img type="button" src="images/proj/factory-1.jpg" data-toggle="modal" data-target="#myModal8" alt="Industry 4.0 Lab">
-                </figure>
-
-              <!-- modal -->
-              <div class="modal fade" id="myModal8" role="dialog">
-                <div class="modal-dialog">
-
-                  <!-- modal content-->
-                  <div class="modal-content the-modal">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title text-center">INDUSTRY 4.0 LAB</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            <img src="images/proj/factory-1.JPG" class="modal-pic center-block">
-                            <p class="modal-text"><br>The Industry 4.0 Lab is a lab used in Management Engineering. It is designed as a factory and automated from start to finish with the use of PLCs and C# software. It simulates a real factory line by using RFID chips as the objects created and introduces variability by altering the code used to fetch RDIF information.<br><br>In this lab, my role is to develop and debug PLC and C# code to improve the factory's automation and remove bugs for a smoother execution.</p>
-                        </p>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-                </li>
+                
+                
               
             </ul>
             
-          
       </section> <!-- END PROJECTS SECTION -->
 
 
