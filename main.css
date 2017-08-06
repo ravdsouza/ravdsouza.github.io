@@ -130,13 +130,13 @@ h3
     font-size:12px; /* idk ????? */
 }
 
-p::selection, h3::selection, h1::selection, h2::selection, i::selection, h4::selection, h5::selection, h6::selection, li::selection, img::selection, figcaption::selection, a::selection
+p::selection, h3::selection, h1::selection, h2::selection, i::selection, h4::selection, h5::selection, h6::selection, li::selection, img::selection, figcaption::selection, a::selection, strong::selection
 {
     background: indianred;
     color: white;
 }
 
-p::-moz-selection, h3::-moz-selection, h1::-moz-selection, h2::-moz-selection, i::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, li::-moz-selection, img::-moz-selection, figcaption::-moz-selection, a::-moz-selection
+p::-moz-selection, h3::-moz-selection, h1::-moz-selection, h2::-moz-selection, i::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, li::-moz-selection, img::-moz-selection, figcaption::-moz-selection, a::-moz-selection, strong::-moz-selection
 {
     background: indianred;
     color: white;
@@ -148,11 +148,10 @@ p::-moz-selection, h3::-moz-selection, h1::-moz-selection, h2::-moz-selection, i
 {
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 50%; 
 	transform: translate(-50%, -50%);
     padding-top: 0px;
-    margin-bottom: 0;
-    
+    margin-bottom: 0;    
 }
 
 .name
@@ -360,7 +359,7 @@ header
     padding-right: 0;
 }
 
-.features i
+.big-icon i
 {
     font-size: 57px;
     color: #2d4262;
@@ -386,6 +385,12 @@ header
     line-height: 17px;
     padding: 5px;
 }
+
+.shadow i
+{
+    padding-top: 7px;
+}
+
 
                                         /* ======== PROJECTS ======== */
 
