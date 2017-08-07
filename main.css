@@ -394,33 +394,28 @@ header
 
                                         /* ======== PROJECTS ======== */
 
-.project-showcase
+.exp-showcase
 {
     list-style: none;
     width: 100%;
     margin-top: 4px;
 }
 
-.project-showcase h3
+.exp-showcase h3
 {
     padding-top: 40px;
 }
 
-.project-showcase li
+.exp-showcase li
 {
     display: block;
     width: 25%;
     float: left;
     max-width: 350px;
-}
-
-.project-pics
-{
-    margin: 10px;
     align-content: center;
 }
 
-.project-pic img/*, .overlay*/
+.exp-pic img/*, .overlay*/
 {
     width: 80%;
     height: 80%;
@@ -433,13 +428,13 @@ header
     border-radius: 10px;
 }
 
-.project-pic img:hover
+.exp-pic img:hover
 {
     transform: scale(1.15); /* for zoom in effect*/
     opacity: 1.0;
 }
 
-.project
+.experience
 {
     padding-top: 10px;
     background: #004d80;
