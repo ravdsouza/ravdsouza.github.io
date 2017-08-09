@@ -241,14 +241,14 @@ header
     background-color: #333333;
 }
 
-.nav li a:focused
+.nav li a:focus
 {
     background-color: #333333;
 }
 
-.btn-one:hover, .btn-two:hover, .btn-three:hover, btn-four:hover, .btn-five:hover, .btn-six:hover
+.btn-one:hover, .btn-two:hover, .btn-three:hover, .btn-four:hover, .btn-five:hover, .btn-six:hover
 {
-	background-color: transparent;
+	background-color: red;
 	color: white;
 	transition: all 0.25s ease;
 	opacity: background 0.8;
@@ -258,6 +258,7 @@ header
 .btn:focus
 {
     color: white;
+    background-color: #333333;
 }
 
 .btn:focus:active
@@ -271,6 +272,11 @@ header
     text-decoration: none;
 }
 
+.my-title
+{
+    font-size: 17px;
+}
+
                                         /* ======== WELCOME AND ABOUT ME ======== */
 
 .info-abt-me p
@@ -281,7 +287,7 @@ header
     color: #d9d9d9;
     text-align: center;
     padding-bottom: 20px;
-    font-size: 2.45vh;
+    font-size: 17px;
 }
 
 .pic-of-me img
@@ -433,7 +439,7 @@ header
     transform: scale(1.15); /* for zoom in effect*/
     opacity: 1.0;
 }
-
+ 
 .experience
 {
     padding-top: 10px;
