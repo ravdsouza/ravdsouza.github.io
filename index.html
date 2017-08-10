@@ -62,7 +62,7 @@
             <div class="container">
                     <div class="start text-center description"> 
                         <h1><span class="name" title="Raveena D'Souza">Raveena D'Souza</span></h1>
-                        <h2><a href="https://uwaterloo.ca/mechanical-mechatronics-engineering/future-undergraduate-students/mechatronics-engineering" target="_blank">Mechatronics Engineering</a> student at the University of Waterloo</h2>
+                        <h2 class="my-title"><a href="https://uwaterloo.ca/mechanical-mechatronics-engineering/future-undergraduate-students/mechatronics-engineering" target="_blank">Mechatronics Engineering</a> student at the University of Waterloo</h2>
                     </div>
                 </div>
           </div> <!-- END MAIN TEXT -->
@@ -232,7 +232,7 @@
                     <div class="modal-body">
                         <p>
                             <img src="images/proj/factory-1.JPG" class="modal-pic center-block">
-                            <p class="modal-text"><br>The Industry 4.0 Lab is a lab used in Management Engineering. It is designed as a factory and automated from start to finish with the use of PLCs and C# software. It simulates a real factory line by using RFID chips as the objects created and introduces variability by altering the code used to fetch RDIF information.<br><br>In this lab, my role is to develop and debug PLC and C# code to improve the factory's automation and remove bugs for a smoother execution.</p>
+                            <p class="modal-text"><br>The Industry 4.0 Lab is a lab used in Management Engineering. It is a simulated factory and automated from start to finish with the use of PLCs and C# software. It imitates a real factory line by using RFID chips as the production line objects.<br><br>My role at this lab is to develop and debug PLC and C# code to improve the factory's automation and remove bugs for a smoother execution.</p>
                         </p>
                     </div>
                   </div>
@@ -286,7 +286,7 @@
                     <div class="modal-body">
                         <p>
                             <img src="images/proj/wear-hacks-myo.jpg" class="modal-pic center-block" id="pic-3">
-                            <p class="modal-text"><br>WearHacks 2017 was a hacakthon held in Kitchener. I, along with three other friends, designed a productvity app to be used with a VR headset, and controlled by the Thalmic Labs' Myo Gesture Control Armband. This app featured sections such as a calendar, to-do list, user health, etc. It was designed in virtual reality that could then be transitioned into augmented reality for a more realistic and useful experience.<br><br>This app was developed with Unity and C#, and HTML/CSS for our website promoting the app.</p>
+                            <p class="modal-text"><br>WearHacks 2017 was a hackathon held in Kitchener. I, along with three other friends, designed a productvity app to be used with a VR headset, and controlled by the Thalmic Labs' Myo Gesture Control Armband. This app featured sections such as a calendar, to-do list, user health, etc. It was designed in virtual reality that could then be transitioned into augmented reality for a more realistic and useful experience.<br><br>This app was developed with Unity and C#, and HTML/CSS for our website promoting the app.</p>
                         </p>
                     </div>
                   </div>
@@ -467,7 +467,7 @@
             <h3 class="text-center subsec" title="contact">contact</h3>
         </div>
         
-        <form method="post" enctype="text/plain" name="comtact-form" action="mailer.php">
+        <form method="post" enctype="text/plain" name="comtact-form">
             
             <div class="row message">
                 <div class="col-md-6 contact-msg text-center">
@@ -482,7 +482,6 @@
                 
                 <div class="col-md-6">
                     <!--<label><span class="required"></span></label> <!-- WTF -->
-                    <input type="hidden" name="redirect_to" value="http://raveenadsouza.com">
                     <input type="text" class="form-control" id="n" placeholder="Name *" required><br>
                     <input type="text" class="form-control" id="e" placeholder="Email *" required><br>
                     <input type="text" class="form-control" id="s" placeholder="Subject"><br>
@@ -490,7 +489,7 @@
                     <textarea class="form-control" rows="8" id="m" placeholder="Message *" required></textarea>
 
                     <input type="reset" value="RESET" class="btn btn-warning btn-block btn1 col-md-6" readonly="readonly">
-                    <input type="submit" value="SEND" class="btn btn-warning btn-block btn2 col-md-6" onClick="checkMail()" readonly="readonly">                 
+                    <input type="submit" value="SEND" class="btn btn-warning btn-block btn2 col-md-6" onclick="checkMail();" readonly="readonly">                 
 
                 </div>
             </div>
