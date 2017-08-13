@@ -45,18 +45,18 @@ body
     font-size: 300%;
     color: #859fc7;
     border-top: 40px;
-    padding-top: 30px;
+    padding-top: 20px;
     text-shadow: 1px 1px grey;
-}
+} 
 
 .features h3, .resume h3
 {
-    color: #333333;
+    color: #333333; /*#333333;*/
 }
 
-.welcome h3, .project h3, .contact-me h3
+.welcome h3, .experience h3, .contact-me h3
 {
-    color: #d9d9d9;
+    color: #333333; /*#d9d9d9;*/
 }
 
 h1, h2
@@ -105,7 +105,7 @@ h1, h2
     background-color: transparent;
 }
 
-h3:after
+h3:after /* underline */
 {
     width: 100px;
     height: 3px;
@@ -130,13 +130,13 @@ h3
     font-size:12px; /* idk ????? */
 }
 
-p::selection, h3::selection, h1::selection, h2::selection, i::selection, h4::selection, h5::selection, h6::selection, li::selection, img::selection, figcaption::selection, a::selection, strong::selection
+p::selection, h3::selection, h1::selection, h2::selection, i::selection, h4::selection, h5::selection, h6::selection, li::selection, img::selection, figcaption::selection, a::selection, strong::selection, span::selection
 {
     background: indianred;
     color: white;
 }
 
-p::-moz-selection, h3::-moz-selection, h1::-moz-selection, h2::-moz-selection, i::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, li::-moz-selection, img::-moz-selection, figcaption::-moz-selection, a::-moz-selection, strong::-moz-selection
+p::-moz-selection, h3::-moz-selection, h1::-moz-selection, h2::-moz-selection, i::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, li::-moz-selection, img::-moz-selection, figcaption::-moz-selection, a::-moz-selection, strong::-moz-selectionm span::-moz-selection
 {
     background: indianred;
     color: white;
@@ -284,7 +284,7 @@ header
     padding-top: 30px;
     padding-left: 20%;
     padding-right: 20%;;
-    color: #d9d9d9;
+    color: #333333;/*#d9d9d9;*/
     text-align: center;
     padding-bottom: 20px;
     font-size: 17px;
@@ -317,23 +317,23 @@ header
 
 .welcome
 {
-    background: #004d80;
-    border: solid 10px #004d80;
+    background: #b3b3b3;/*#004d80;*/
+    border: solid 10px #b3b3b3; /*004d80;*/
 }
 
                                         /* ======== SKILLS ======== */
 
 .features
 {
-    background: #b3d9ff;
+    background: #cccccc; /* #b3d9ff;*/
     background-image: url(images/bkgd/subtle-grey.jpg);
     background-blend-mode: darken;
-    border-bottom: solid 40px #b3d9ff;
+    border-bottom: solid 40px #cccccc; /*b3d9ff;*/
 }
 
 .features h3
 {
-    border-top: solid 10px #b3d9ff;
+    border-top: solid 10px #cccccc; /*b3d9ff;*/
     border-bottom: 30px;
 }
 
@@ -368,7 +368,7 @@ header
 .big-icon i
 {
     font-size: 57px;
-    color: #2d4262;
+    color: #002266;
     align-items: center;
 }
 
@@ -428,10 +428,10 @@ header
     max-width: 200px;
     transform: scale(1.1);
     transition: all 0.5s;
-    opacity: 0.7; 
+    opacity: 0.79; 
     position: relative; 
-    margin-top: 40px;
-    border-radius: 10px;
+    margin-top: 30px;
+    border-radius: 20px;
 }
 
 .exp-pic img:hover
@@ -439,11 +439,15 @@ header
     transform: scale(1.15); /* for zoom in effect*/
     opacity: 1.0;
 }
+
+.exp-pic p
+{
+    padding-top: 15px;
+}
  
 .experience
 {
-    padding-top: 10px;
-    background: #004d80;
+    background: #b3b3b3;
     padding-bottom: 50px;
 }
 
@@ -479,12 +483,24 @@ header
     border-radius: 10px;
 }
 
+.exp-pic:after
+{
+    color: red;
+    background-color: green;
+}
+
+.caption
+{
+    font-size: 17px;
+    font-weight: bold;
+}
+
                                         /* ======== RESUME ======== */
 
 .resume
 {
     padding-bottom: 35px;
-    background: #b3d9ff;
+    background: #cccccc;
 }
 
 .resume-thanks
@@ -517,7 +533,7 @@ header
 
 .btn-block
 {
-    background-color: #b2c6e6;
+    background-color: #000;
     color: white;
     border-radius: 4px;
     margin-top: 20px;
@@ -531,15 +547,15 @@ header
 
 .contact-me
 {
-    border-top: solid 20px #004d80;
-    border-bottom: solid 10px #004d80;
-    background: #004d80;
+    border-top: solid 30px #b3b3b3;
+    border-bottom: solid 10px #b3b3b3;
+    background: #b3b3b3;
 }
 
 .social-media-icons i
 {
     font-size: 40px;
-    color:#b2c6e6;
+    color: #404040; /*#b2c6e6;*/
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 30px;
@@ -548,12 +564,12 @@ header
 
 .social-media-icons i:hover
 {
-    color:#9fb8e0;
+    color: indianred; /*#9fb8e0;*/
 }
 
 .contact-msg p
 {
-    color: #d9d9d9;
+    color: #000;
     font-size: 20px;
     align-content: center;
     padding-bottom: 10px;
@@ -629,14 +645,14 @@ header
 footer
 {
     padding: 10px;
-    background-color: #b2c6e6;
+    background-color: #cccccc;
 }
 
 .footer-msg
 {
     margin: 0;
     color: #1a1a1a;
-    background-color: #b2c6e6;
+    background-color: #cccccc;
 }
 
                                         /* ======== EXTRA CSS ======== */
@@ -685,5 +701,12 @@ a.anchor {
     top: 50%;
     align-items: center;
 }
+
+colours from E5 pic
+7195a3
+24454f
+7da3a7
+
+
 */
 /* Copyright © 2017 Raveena D'Souza */
