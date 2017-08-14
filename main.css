@@ -226,7 +226,7 @@ header
 .nav li a:hover
 {
     transition: all 0.15s ease-in;
-    color: #b3e0ff;
+    color: #85b7c7;
     background-color: transparent;
     text-shadow: 1px 1px #000000;
 }
@@ -248,7 +248,6 @@ header
 
 .btn-one:hover, .btn-two:hover, .btn-three:hover, .btn-four:hover, .btn-five:hover, .btn-six:hover
 {
-	background-color: red;
 	color: white;
 	transition: all 0.25s ease;
 	opacity: background 0.8;
@@ -263,7 +262,7 @@ header
 
 .btn:focus:active
 {
-    color: #99d6ff;
+    color: #79adbf;
 }
 
 .description a
@@ -319,6 +318,7 @@ header
 {
     background: #b3b3b3;/*#004d80;*/
     border: solid 10px #b3b3b3; /*004d80;*/
+    border-bottom: solid 15px #b3b3b3;
 }
 
                                         /* ======== SKILLS ======== */
@@ -368,7 +368,7 @@ header
 .big-icon i
 {
     font-size: 57px;
-    color: #002266;
+    color: #305c69;
     align-items: center;
 }
 
@@ -495,6 +495,12 @@ header
     font-weight: bold;
 }
 
+.exp-pic p
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
                                         /* ======== RESUME ======== */
 
 .resume
@@ -513,7 +519,7 @@ header
 .resume a
 {
     font-size: 18px;
-    color: #4b5c9b;
+    color: #305c69;
 	padding: 10px;
 	text-decoration: none;
 	border-radius: 12px;
@@ -526,7 +532,7 @@ header
 
 .resume a:hover
 {
-    color: #3a4878;
+    color: #284c57;
 }
 
                                         /* ======== CONTACT ME ======== */
@@ -555,7 +561,7 @@ header
 .social-media-icons i
 {
     font-size: 40px;
-    color: #404040; /*#b2c6e6;*/
+    color: #305c69; /*#b2c6e6;*/
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 30px;
@@ -564,7 +570,7 @@ header
 
 .social-media-icons i:hover
 {
-    color: indianred; /*#9fb8e0;*/
+    color: #284c57; /*#9fb8e0;*/
 }
 
 .contact-msg p
@@ -582,32 +588,27 @@ header
 .btn-warning
 {
     margin: 0;
+    background-color: #305c69;
 }
 
-.btn1:focus, .btn1:active, .btn1:active:focus  
+.btn1:focus, .btn1:active, .btn1:active:focus, .btn2:focus, .btn2:active, .btn2:active:focus 
 {
     color: white;
-    background-color: #b2c6e6;
-    border-color: #b2c6e6;
-}
-
-.btn2:focus, .btn2:active, .btn2:active:focus  
-{
-    color: white;
-    background-color: #b2c6e6;
-    border-color: #b2c6e6;
+    background-color: #305c69;
+    border-color: #305c69;
 }
 
 .btn-warning:hover, .btn-warning:visited
 {
     color: white;
-    background-color: #9fb8e0;
+    background-color: #284c57;
 }
 
 .btn-warning:active:focus
 {
     color: white;
-    background-color: #8ba9da;
+    background-color: #386b7a;
+    border-color: #305c69;
 }
 
 .btn1
