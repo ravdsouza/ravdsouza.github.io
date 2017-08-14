@@ -252,7 +252,7 @@ header
 	transition: all 0.25s ease;
 	opacity: background 0.8;
     background-blend-mode: color;
-}
+}  
 
 .btn:focus
 {
