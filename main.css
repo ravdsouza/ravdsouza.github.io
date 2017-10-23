@@ -18,7 +18,7 @@
 
 body
 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 @font-face
@@ -39,9 +39,15 @@ body
     src: url("fonts/Alpha54.ttf");
 }
 
+@font-face
+{
+    font-family: "GlacialIndifference";
+    src: url("fonts/GlacialIndifference-Bold.otf");
+}
+
 .subsec
 {
-    font-family: 'AutumnInNovember';
+    font-family: 'Raleway', sans-serif;
     font-size: 300%;
     color: #859fc7;
     border-top: 40px;
@@ -142,8 +148,6 @@ p::-moz-selection, h3::-moz-selection, h1::-moz-selection, h2::-moz-selection, i
     color: #e6e6e6;
 }
 
-                                        /* ======== HEADER ======== */
-
 .start
 {
 	position: absolute;
@@ -156,7 +160,8 @@ p::-moz-selection, h3::-moz-selection, h1::-moz-selection, h2::-moz-selection, i
 
 .name
 {
-    font-family: 'AutumnInNovember';
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
     height: 11vh;
     padding-left: 0;
     font-size: 11vh;
@@ -179,9 +184,9 @@ p::-moz-selection, h3::-moz-selection, h1::-moz-selection, h2::-moz-selection, i
 header
 {
     /* Image used is by Cody Wilson and can be seen at https://500px.com/photo/39662100/wallowa-oregon-by-cody-wilson */
-	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url(images/bkgd/palm-trees.JPG);
+	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url(images/bkgd/grey.png);
 	height: 100vh;
-	background-position: center;
+	background-position: bottom;
 	background-size: cover; 
     background-attachment: fixed;
     position: relative;
@@ -623,7 +628,8 @@ header
 
                                         /* ======== FOOTER ======== */
 
-.scroll-to-top {
+.scroll-to-top 
+{
    width: 40px;
    height: 40px;
    opacity: 0.6;
@@ -632,12 +638,17 @@ header
    right: 9px;
  }
 
-.scroll-to-top:hover
+.scroll-down 
+{
+    opacity: 0.6;
+}
+
+.scroll-to-top:hover, .scroll-down:hover
 {
     opacity: 0.8;
 }
 
-.scroll-to-top img
+.scroll-to-top img, .scroll-down img
 {
     height: 40px;
     width: 40px;
