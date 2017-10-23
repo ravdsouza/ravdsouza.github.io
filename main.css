@@ -184,7 +184,7 @@ p::-moz-selection, h3::-moz-selection, h1::-moz-selection, h2::-moz-selection, i
 header
 {
     /* Image used is by Cody Wilson and can be seen at https://500px.com/photo/39662100/wallowa-oregon-by-cody-wilson */
-	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url(images/bkgd/grey.png);
+	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),url(images/bkgd/tre-cime-di-lavaredo-italy.jpg);
 	height: 100vh;
 	background-position: bottom;
 	background-size: cover; 
