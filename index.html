@@ -33,7 +33,7 @@
             <div class="card">
                 <h2>An introduction to the team</h2>
                 <h5>Jan 20, 2021</h5>
-                <p>So who are the brains behind Bee's Knees? Let's introduce ourselves. This group is made up of three Mechatronics Engineering students, Raveena D'Souza, Tia Headworth, and J Reinstein. Our goal is to address surgery recovery pertaining to the knee joints. </p>
+                <p>So who are the brains behind Bee's Knees? Let's introduce ourselves. This group is made up of three Mechatronics Engineering students, Raveena D'Souza, Tia Headworth, and J Reinstein. Our goal is to address surgery recovery pertaining to the knee joints. Over the course of the next couple months, we'll be working through the design, prototype, and final model of our system, and post updates.</p>
             </div>
             <div class="card">
                 <h2>Update 1: Purchases</h2>
@@ -45,12 +45,25 @@
                 <h5>Feb 10, 2021</h5>
                 <p> In this post you can see our temperature sensing circuit. The thermistor we chose is a medical grade thermistor designed for skin surface measurements. This part of our project utilizes a Wheatstone bridge configuration to measure the resistance of our thermistor. Using the table from the datasheet of our sensor we produced a line of best fit to relate the resistance to the temperature and used this relationship to calculate our temperature readings. In a simple test you can see our temperature readings rise in response to a warm breath on the sensor.</p>
                 <div class="fakeimg center" style="align-content: center;">
-                    <img src='images/circuit.jpg' style="height:50%; width: 30%;margin: 10px; max-width: 200px;max-height: 200px;" >
+                    <!--<img src='images/circuit.jpg' style="height:50%; width: 30%;margin: 10px; max-width: 200px;max-height: 200px;" >-->
                     <img src='images/vals.jpg' style="height:50%; width: 30%;margin: 10px;max-width: 200px;max-height: 200px;" >
                     <img src='images/temp.jpg' style="height:50%; width: 30%;margin: 10px;max-width: 200px;max-height: 200px; " >
                 </div>
             </div>
-
+            <div class="card">
+                <h2>Update 3: Arduino code</h2>
+                <h5>Feb 20, 2021</h5>
+                <p>For the electrical portion of our project, we will be using an Arduino to collect data, clean the data, and send it along to Firebase. Using libraries such as the Firebase library and the SPI serial library, we have collected sensor data from the encoders and the temperature sensors to send to Firebase. The sensor data is cleaned and calibrated on the Arduino side before sending it over to the Firebase Realtime Database for visualization.</p>
+            </div>
+            <div class="card">
+                <h2>Update 4: Firebase data storage</h2>
+                <h5>Feb 24, 2021</h5>
+                <p>In this post, you can see that we've configured Firebase to receive data from the Arduino by using a Firebase library. The temperature data collected from our skin temperature sensor is calibrated and uploaded to the Firebase Realtime Database. This database ensures that updates are realtime on the dashboard, and that any changes that occur in the database are reflected almost instantly. The flow from end to end of this system starts when the user puts the brace on their knee. The temperature data is recorded at certain times in the day and this data is automatically sent to Firebase via the Arduino code. The dashboard then instantly updates the graphs based on the new data that's presented. This allows us to have a full end to end connection, and brings us one step closer to our fully finished prototype and model </p>
+                <div class="fakeimg center" style="align-content: center;">
+                    <img src='images/ewefwww.png' style="height:50%; width: 30%;margin: 10px; max-width: 200px;max-height: 200px;" >
+                    <img src='images/fireb.JPG' style="height:50%; width: 30%;margin: 10px; max-width: 200px;max-height: 200px;" >
+                </div>
+            </div>
         </div>
         <div class="rightcolumn">
         <div class="card">
