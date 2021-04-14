@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Group 29 FYDP</title>
+    <meta name="description" content="Group 29 HTML">
+    <meta name="author" content="SitePoint">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href='blog.html'>Blog</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <div class="header">
+        <h2>Bee's Knees Project</h2>
+    </div>
+    
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>An introduction to the team</h2>
+                <h5>Jan 20, 2021</h5>
+                <p>So who are the brains behind Bee's Knees? Let's introduce ourselves. This group is made up of three Mechatronics Engineering students, Raveena D'Souza, Tia Headworth, and J Reinstein. Our goal is to address surgery recovery pertaining to the knee joints. Over the course of the next couple months, we'll be working through the design, prototype, and final model of our system, and post updates.</p>
+            </div>
+            <div class="card">
+                <h2>Update 1: Purchases</h2>
+                <h5>Jan 22, 2021</h5>
+                <p>To begin prototyping, we've purchased some materials! Some of these include an Arduino and a kit, some sensors (thermistors and encoders), and a battery pack. These materials will help us build the prototype for the Bee's Knees project.</p>
+            </div>
+            <div class="card">
+                <h2>Update 2: Temperature sensing</h2>
+                <h5>Feb 10, 2021</h5>
+                <p> In this post you can see our temperature sensing circuit. The thermistor we chose is a medical grade thermistor designed for skin surface measurements. This part of our project utilizes a Wheatstone bridge configuration to measure the resistance of our thermistor. Using the table from the datasheet of our sensor we produced a line of best fit to relate the resistance to the temperature and used this relationship to calculate our temperature readings. In a simple test you can see our temperature readings rise in response to a warm breath on the sensor.</p>
+                <div class="fakeimg center" style="align-content: center;">
+                    <!--<img src='images/circuit.jpg' style="height:50%; width: 30%;margin: 10px; max-width: 200px;max-height: 200px;" >-->
+                    <img src='images/vals.jpg' style="height:50%; width: 30%;margin: 10px;max-width: 200px;max-height: 200px;" >
+                    <img src='images/temp.jpg' style="height:50%; width: 30%;margin: 10px;max-width: 200px;max-height: 200px; " >
+                </div>
+            </div>
+            <div class="card">
+                <h2>Update 3: Arduino code</h2>
+                <h5>Feb 20, 2021</h5>
+                <p>For the electrical portion of our project, we will be using an Arduino to collect data, clean the data, and send it along to Firebase. Using libraries such as the Firebase library and the SPI serial library, we have collected sensor data from the encoders and the temperature sensors to send to Firebase. The sensor data is cleaned and calibrated on the Arduino side before sending it over to the Firebase Realtime Database for visualization.</p>
+            </div>
+            <div class="card">
+                <h2>Update 4: Firebase data storage</h2>
+                <h5>Feb 24, 2021</h5>
+                <p>In this post, you can see that we've configured Firebase to receive data from the Arduino by using a Firebase library. The temperature data collected from our skin temperature sensor is calibrated and uploaded to the Firebase Realtime Database. This database ensures that updates are realtime on the dashboard, and that any changes that occur in the database are reflected almost instantly. The flow from end to end of this system starts when the user puts the brace on their knee. The temperature data is recorded at certain times in the day and this data is automatically sent to Firebase via the Arduino code. The dashboard then instantly updates the graphs based on the new data that's presented. This allows us to have a full end to end connection, and brings us one step closer to our fully finished prototype and model </p>
+                <div class="fakeimg center" style="align-content: center;">
+                    <img src='images/ewefwww.png' style="height:50%; width: 30%;margin: 10px; max-width: 200px;max-height: 200px;" >
+                    <img src='images/fireb.JPG' style="height:50%; width: 30%;margin: 10px; max-width: 200px;max-height: 200px;" >
+                </div>
+            </div>
+            <div class="card">
+                <h2>Update 5: Mounting and calibration</h2>
+                <h5>Mar 5, 2021</h5>
+                <p>A vital part of our design is the mounting of the device onto a knee brace! This week we've made the circuitry cleaner so that it can easily be placed onto the brace. Once it was on the brace, we calibrated it so that the right angles of flexion and extension were noted for the knee. In our next few weeks left of this design project, we hope to thoroughly test and validate that what we've built works property and add insights to our dashboard.</p>
+            </div>
+            <div class="card">
+                <h2>Update 6: Authentication</h2>
+                <h5>Mar 10, 2021</h5>
+                <p>Authentication is very important for any healthcare service. For this project we have a dashboard that patients and physical therapists can use to ensure that everything is healing well and if there are any concerns, they can discuss this with their patients during post-op appointments. Authentication is used here so that users log into their own accounts and see information pertinent to their own recovery. Physical therapists log in and are able to access the information for all their patients so it is vital to have authentication working properly.</p>
+            </div>
+            <div class="card">
+                <h2>Update 7: Prototype</h2>
+                <h5>Mar 23, 2021</h5>
+                <p>We've built our device! After mounting everything and building the web application fully, we are done with the main part of the building and development phase, and will be transitioning into the testing and validation phase. Below is an image of what the brace currently looks like with everything mounted.</p>
+                <div class="fakeimg center" style="align-content: center;">
+                    <img src='images/brace promo shot.png' style="height:70%; width: 50%;margin: 10px; max-width: 200px;max-height: 200px;" >
+                </div>
+            </div>
+            <div class="card">
+                <h2>Update 8: Testing</h2>
+                <h5>Apr 8, 2021</h5>
+                <p>We've tested our device! Over the past two weeks, we've recorded our range of motion and skin surface temperature at 9 AM and 7 PM to ensure that everything is being calculated and calibrated properly. We've verified that these values are accurate using skin temperatures and a protractor to ensure that everything is working as expected. Insights and trends have been added to the dashboard so now patients and therapists can view all the pertinent information for them.</p>
+            </div>
+            <div class="card">
+                <h2>Update 9: Final remarks</h2>
+                <h5>Apr 14, 2021</h5>
+                <p>This is officially our last day of working on this device! Over the past 8 months, we have gone from a vague problem statement to a full-fledged prototype that works fully. We are very proud of the all the hardwork it took to get here and would like to thank our advisors Professor Baris Fidan and Professor Ayman El-Hag for helping us throughout the entire process! :)</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+        <div class="card about">
+            <h2>About Us</h2>
+            <div class="fakeimg" style="margin-bottom: 2px;"><img src='images/Raveena_DSouza_BeesKnees.jpg' style="height:100px; width: 100px;" ></div>
+            <div class="fakeimg" style="margin-bottom: 2px;"><img src='images/Tia_Headworth_BeesKnees.jpg' style="height:100px; width: 100px;"></div>
+            <div class="fakeimg" style="margin-bottom: 40px;"><img src='images/J_Reinstein_BeesKnees.png' style="height:100px; width: 100px;"></div>
+            <p>We are a team of Mechatronics Engineering students passionate about addressing the issues with joint recovery after surgery. </p>
+        </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <h4>Raveena D'Souza, Tia Headworth, J Reinstein &copy; 2021</h4>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+

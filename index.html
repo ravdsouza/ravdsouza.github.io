@@ -23,62 +23,44 @@
 </head>
 
 <body>
+
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href='blog.html'>Blog</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
     
     <div class="header">
         <h2>Bee's Knees Project</h2>
     </div>
+
+
+    <div class="col-sm-2"></div>
     
-    <div class="row">
-        <div class="leftcolumn">
-            <div class="card">
-                <h2>An introduction to the team</h2>
-                <h5>Jan 20, 2021</h5>
-                <p>So who are the brains behind Bee's Knees? Let's introduce ourselves. This group is made up of three Mechatronics Engineering students, Raveena D'Souza, Tia Headworth, and J Reinstein. Our goal is to address surgery recovery pertaining to the knee joints. Over the course of the next couple months, we'll be working through the design, prototype, and final model of our system, and post updates.</p>
-            </div>
-            <div class="card">
-                <h2>Update 1: Purchases</h2>
-                <h5>Jan 22, 2021</h5>
-                <p>To begin prototyping, we've purchased some materials! Some of these include an Arduino and a kit, some sensors (thermistors and encoders), and a battery pack. These materials will help us build the prototype for the Bee's Knees project.</p>
-            </div>
-            <div class="card">
-                <h2>Update 2: Temperature sensing</h2>
-                <h5>Feb 10, 2021</h5>
-                <p> In this post you can see our temperature sensing circuit. The thermistor we chose is a medical grade thermistor designed for skin surface measurements. This part of our project utilizes a Wheatstone bridge configuration to measure the resistance of our thermistor. Using the table from the datasheet of our sensor we produced a line of best fit to relate the resistance to the temperature and used this relationship to calculate our temperature readings. In a simple test you can see our temperature readings rise in response to a warm breath on the sensor.</p>
-                <div class="fakeimg center" style="align-content: center;">
-                    <!--<img src='images/circuit.jpg' style="height:50%; width: 30%;margin: 10px; max-width: 200px;max-height: 200px;" >-->
-                    <img src='images/vals.jpg' style="height:50%; width: 30%;margin: 10px;max-width: 200px;max-height: 200px;" >
-                    <img src='images/temp.jpg' style="height:50%; width: 30%;margin: 10px;max-width: 200px;max-height: 200px; " >
-                </div>
-            </div>
-            <div class="card">
-                <h2>Update 3: Arduino code</h2>
-                <h5>Feb 20, 2021</h5>
-                <p>For the electrical portion of our project, we will be using an Arduino to collect data, clean the data, and send it along to Firebase. Using libraries such as the Firebase library and the SPI serial library, we have collected sensor data from the encoders and the temperature sensors to send to Firebase. The sensor data is cleaned and calibrated on the Arduino side before sending it over to the Firebase Realtime Database for visualization.</p>
-            </div>
-            <div class="card">
-                <h2>Update 4: Firebase data storage</h2>
-                <h5>Feb 24, 2021</h5>
-                <p>In this post, you can see that we've configured Firebase to receive data from the Arduino by using a Firebase library. The temperature data collected from our skin temperature sensor is calibrated and uploaded to the Firebase Realtime Database. This database ensures that updates are realtime on the dashboard, and that any changes that occur in the database are reflected almost instantly. The flow from end to end of this system starts when the user puts the brace on their knee. The temperature data is recorded at certain times in the day and this data is automatically sent to Firebase via the Arduino code. The dashboard then instantly updates the graphs based on the new data that's presented. This allows us to have a full end to end connection, and brings us one step closer to our fully finished prototype and model </p>
-                <div class="fakeimg center" style="align-content: center;">
-                    <img src='images/ewefwww.png' style="height:50%; width: 30%;margin: 10px; max-width: 200px;max-height: 200px;" >
-                    <img src='images/fireb.JPG' style="height:50%; width: 30%;margin: 10px; max-width: 200px;max-height: 200px;" >
-                </div>
-            </div>
+    <div class='col-sm-4'>
+        <div class=''>
+            <img style='max-width: 300px; align-content: center;' src="images/brace promo shot.png">
         </div>
-        <div class="rightcolumn">
+    </div>
+    <div class="col-sm-4">
         <div class="card">
-            <h2>About Us</h2>
-            <div class="fakeimg" style="margin-bottom: 2px;"><img src='images/Raveena_DSouza_BeesKnees.jpg' style="height:100px; width: 100px;" ></div>
-            <div class="fakeimg" style="margin-bottom: 2px;"><img src='images/Tia_Headworth_BeesKnees.jpg' style="height:100px; width: 100px;"></div>
-            <div class="fakeimg" style="margin-bottom: 40px;"><img src='images/J_Reinstein_BeesKnees.png' style="height:100px; width: 100px;"></div>
-            <p>We are a team of Mechatronics Engineering students passionate about addressing the issues with joint recovery after surgery. </p>
+            The Bee's Knees joint monitoring device is a device made by three University of Waterloo students for the Capstone project. The inspiration behind this device is the lack of proper recovery monitoring patients often have after their surgery. The device is meant to be mounted on a knee brace that one would wear after surgery, and tracks data about the range of motion and inflammation at the knee for the two weeks after surgery. The trends over time and insights pertaining to recovery can be viewed on the patient's dashboard and physical therapists have access to this information as well. The goal of this device is to ensure that everything is recoverying as intended and that any early signs of infection and inflammation are caught early.
         </div>
+    </div>
+    <div class="col-sm-2"></div>
+    
+    <div class="container">
+        <div class='row'>
+            <div class='col-sm-12'>
+
+            </div>
         </div>
     </div>
     
-    <div class="footer">
+    <footer class="footer">
         <h4>Raveena D'Souza, Tia Headworth, J Reinstein &copy; 2021</h4>
-    </div>
+    </footer>
 
     <script src="js/scripts.js"></script>
 </body>
